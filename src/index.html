@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+   @@include('components/head.html', { "title":"Главная" })
+   <body>
+      <!-- <input type="checkbox" name="" id="maketbtn" />
+        <div class="maket">
+            <img src="@img/hlam/index.png" class="xl" />
+            <img src="@img/hlam/index_phone.png" class="sm" />
+        </div> -->
+
+      <!-- <input type="checkbox" name="" id="maketbtn2" />
+        <div class="maket2">
+            <img src="@img/hlam/index_new.png" class="xl" />
+            <img src="@img/hlam/index_phone_new.png" class="sm" />
+        </div> -->
+
+      <main class="main">
+         @@include('components/header/header.html', {})
+         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" type="text/javascript"></script>
+
+         <div class="wrapper">
+            <h1 style="display: none">Главная</h1>
+            <section class="home-slider bg-gray">
+               <div class="container">
+                  <button class="slider-arr slider-arr_prev">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow-slider"></use>
+                     </svg>
+                  </button>
+                  <button class="slider-arr slider-arr_next">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow-slider"></use>
+                     </svg>
+                  </button>
+                  <div class="home-slider__list">
+                     <div class="home-slider__slide slide-hs" style="background-image: url(img/home/slider_intro_fon.png)">
+                        <div class="slide-hs__text">
+                           <div style="background-image: url('img/home/slider_intro_panel_1.png')">бесплатный</div>
+                           <div style="background-image: url('img/home/slider_intro_panel_2.png')">шиномонтаж*</div>
+                        </div>
+                        <div class="slide-hs__img">
+                           <img src="@img/home/slider_intro_img.png" alt="slider_intro_img" />
+                        </div>
+                        <div class="slide-hs__small">
+                           *смотрите товары, <br />
+                           участвующие в акции
+                        </div>
+                     </div>
+                     <div class="home-slider__slide slide-hs" style="background-image: url(img/home/slider_intro_fon.png)">
+                        <div class="slide-hs__text">
+                           <div style="background-image: url('img/home/slider_intro_panel_1.png')">бесплатный</div>
+                           <div style="background-image: url('img/home/slider_intro_panel_2.png')">шиномонтаж*</div>
+                        </div>
+                        <div class="slide-hs__img">
+                           <img src="@img/home/slider_intro_img.png" alt="slider_intro_img" />
+                        </div>
+                        <div class="slide-hs__small">
+                           *смотрите товары, <br />
+                           участвующие в акции
+                        </div>
+                     </div>
+                     <div class="home-slider__slide slide-hs" style="background-image: url(img/home/slider_intro_fon.png)">
+                        <div class="slide-hs__text">
+                           <div style="background-image: url('img/home/slider_intro_panel_1.png')">бесплатный</div>
+                           <div style="background-image: url('img/home/slider_intro_panel_2.png')">шиномонтаж*</div>
+                        </div>
+                        <div class="slide-hs__img">
+                           <img src="@img/home/slider_intro_img.png" alt="slider_intro_img" />
+                        </div>
+                        <div class="slide-hs__small">
+                           *смотрите товары, <br />
+                           участвующие в акции
+                        </div>
+                     </div>
+                     <div class="home-slider__slide slide-hs" style="background-image: url(img/home/slider_intro_fon.png)">
+                        <div class="slide-hs__text">
+                           <div style="background-image: url('img/home/slider_intro_panel_1.png')">бесплатный</div>
+                           <div style="background-image: url('img/home/slider_intro_panel_2.png')">шиномонтаж*</div>
+                        </div>
+                        <div class="slide-hs__img">
+                           <img src="@img/home/slider_intro_img.png" alt="slider_intro_img" />
+                        </div>
+                        <div class="slide-hs__small">
+                           *смотрите товары, <br />
+                           участвующие в акции
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            @@include('components/filter/filter-home.html', {})
+
+            <div class="section-nome mt_80">
+               <div class="container">
+                  <h2 class="subtitle">Магазин шин и дисков в Санкт-Петербурге</h2>
+                  <div class="section-nome__list flex fw">
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Зимние шипованные шины</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/01.svg" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Зимние нешипованные шины</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/02.svg" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Летние шины</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/03.svg" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Всесезонные шины</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/04.svg" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Мотошины</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/05.svg" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Литые диски</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/06.png" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Штампованные диски</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/07.png" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Сопутствующие товары</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/sections/08.png" alt="section_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.svg" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="services-home mt_80">
+               <div class="container">
+                  <h2 class="subtitle">Услуги</h2>
+                  <div class="services-home__slider">
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Стационарный шиномонтаж</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/01.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Мобильный шиномонтаж</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/02.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Хранение колёс</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/03.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Правка, ремонт дисков</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/04.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Покраска дисков</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/05.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="services-home__progress progress-slider">
+                     <div></div>
+                  </div>
+                  <div class="services-home__bottom flex">
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Доставка по Санкт-Петербургу</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/06.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="section-cart">
+                        <div class="section-cart__overlay">
+                           <div class="section-cart__name">Доставка по России</div>
+                           <div class="section-cart__img">
+                              <img src="@img/product/services/07.png" alt="services_img" />
+                           </div>
+                           <div class="section-cart__btn">
+                              <img src="@img/icons/arr-red.png" alt="arr-red_icon" />
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            @@include('components/productSlider/productSlider.html', {title:'Популярные товары'}) @@include('components/specOrders/specOrders.html', { }) @@include('components/productSlider/productSlider.html', {title:'Рекомендованные товары'})
+
+            <div class="brand-home brand-home_tire mt_80">
+               <div class="container">
+                  <h2 class="subtitle">Популярные бренды шин</h2>
+                  <div class="brand-home__list flex fw">
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/01.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/02.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/03.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/04.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/05.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/06.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/07.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/08.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/09.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/10.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/11.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/12.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/13.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/14.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/15.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/16.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/17.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/tire/17.png" alt="brand_img" /></a>
+                  </div>
+                  <a href="#" class="flex cv link-more link-more_hv">
+                     Все бренды<span>
+                        <svg class="icon">
+                           <use xlink:href="img/sprite.svg#arr-link"></use>
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+            </div>
+            <div class="brand-home brand-home_disks mt_80">
+               <div class="container">
+                  <h2 class="subtitle">Популярные бренды дисков</h2>
+                  <div class="brand-home__list flex fw">
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/01.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/02.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/03.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/04.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/05.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/06.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/07.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/08.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/09.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/10.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/11.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/12.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/13.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/14.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/15.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/16.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/17.png" alt="brand_img" /></a>
+                     <a href="#" class="brand-home__item"><img src="@img/brand/disks/17.png" alt="brand_img" /></a>
+                  </div>
+                  <a href="#" class="flex cv link-more link-more_hv">
+                     Все бренды<span>
+                        <svg class="icon">
+                           <use xlink:href="img/sprite.svg#arr-link"></use>
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+            </div>
+            @@include('components/mapsBlock/mapsBlock.html', {title:'87 пунктов выдачи в Санкт-Петербурге с шиномонтажом', class:'mt_80'})
+            <div class="articles-block mt_80">
+               <div class="container">
+                  <h2 class="subtitle">Это интересно</h2>
+                  <div class="articles-block__wrap flex">
+                     <div class="articles-block__items flex">
+                        <div class="article-cart">
+                           <a href="#" class="article-cart__img img-resize">
+                              <img src="@img/articles/prev/304x176.png" class="img-resize__default" />
+                              <img src="@img/articles/prev/01.png" alt="card-img" class="img-resize__visible" />
+                           </a>
+                           <div class="article-cart__body">
+                              <a href="#" class="article-cart__name">Как правильно хранить зимние и летние шины?</a>
+                              <div class="article-cart__desc">Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit pellentesque id. Lobortis felis maecenas bibendum tempus amet non molestie. Lobortis felis maecenas bibendum tempus amet non molestie.</div>
+                              <a href="#" class="flex cv link-more link-more_hv">
+                                 Читать далее<span>
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#arr-link"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="article-cart">
+                           <a href="#" class="article-cart__img img-resize">
+                              <img src="@img/articles/prev/304x176.png" class="img-resize__default" />
+                              <img src="@img/articles/prev/02.png" alt="card-img" class="img-resize__visible" />
+                           </a>
+                           <div class="article-cart__body">
+                              <a href="#" class="article-cart__name">Обзор новинок летних шин&nbsp;2024</a>
+                              <div class="article-cart__desc">Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit pellentesque id. Lobortis felis maecenas bibendum tempus amet non molestie. Lobortis felis maecenas bibendum tempus amet non molestie.</div>
+                              <a href="#" class="flex cv link-more link-more_hv">
+                                 Читать далее<span>
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#arr-link"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="articles-block__video video-y">
+                        <div class="video-y__player"></div>
+                        <div class="video-y__cover">
+                           <div class="video-y__poster">
+                              <img src="@img/all/poster.png" alt="poster_icon" />
+                           </div>
+                           <button class="video-y__btn" data-video="lAYkgP8S-4k">
+                              <img src="@img/icons/play.svg" alt="play_icon" />
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="popular-size mt_80 bg-gray">
+               <div class="container">
+                  <h2 class="subtitle">Наиболее популярные типоразмеры шин</h2>
+                  <div class="popular-size__list flex fw">
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R13</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                           <a href="#">175/65 R13</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R14</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                           <a href="#">175/65 R14</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R15</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                           <a href="#">175/65 R15</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R16</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R16</a>
+                           <a href="#">175/65 R16</a>
+                           <a href="#">175/65 R16</a>
+                           <a href="#">175/65 R16</a>
+                           <a href="#">175/65 R16</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R17</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R17</a>
+                           <a href="#">175/65 R17</a>
+                           <a href="#">175/65 R17</a>
+                           <a href="#">175/65 R17</a>
+                           <a href="#">175/65 R17</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R18</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R18</a>
+                           <a href="#">175/65 R18</a>
+                           <a href="#">175/65 R18</a>
+                           <a href="#">175/65 R18</a>
+                           <a href="#">175/65 R18</a>
+                           <a href="#">175/65 R18</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R19</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                           <a href="#">175/65 R19</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R20</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R20</a>
+                           <a href="#">175/65 R20</a>
+                           <a href="#">175/65 R20</a>
+                           <a href="#">175/65 R20</a>
+                           <a href="#">175/65 R20</a>
+                           <a href="#">175/65 R20</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R21</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R21</a>
+                           <a href="#">175/65 R21</a>
+                           <a href="#">175/65 R21</a>
+                           <a href="#">175/65 R21</a>
+                           <a href="#">175/65 R21</a>
+                        </div>
+                     </div>
+                     <div class="popular-size__col">
+                        <div class="popular-size__name">R22</div>
+                        <div class="popular-size__links">
+                           <a href="#">175/65 R22</a>
+                           <a href="#">175/65 R22</a>
+                           <a href="#">175/65 R22</a>
+                           <a href="#">175/65 R22</a>
+                           <a href="#">175/65 R22</a>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="popular-size__btn link-more link-more_dn link-more_center">
+                     Показать остальные<span>
+                        <svg class="icon">
+                           <use xlink:href="img/sprite.svg#arr-link"></use>
+                        </svg>
+                     </span>
+                  </button>
+               </div>
+            </div>
+            <div class="home-about mt_80 text">
+               <div class="container">
+                  <div class="home-about__wrap">
+                     <div class="home-about__prev">
+                        <h2 class="subtitle">Автомобильные шины и диски SPB KOLESO</h2>
+                        <div class="">
+                           <p>Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit pellentesque id. Lobortis felis maecenas bibendum tempus amet non molestie morbi. Vel tellus eget lacus porta blandit interdum pellentesque consectetur neque. Porttitor enim et ac tellus euismod dignissim. Diam nisl ultrices viverra cras eleifend. Facilisi ut ac turpis nibh viverra vitae eget vulputate pharetra. In maecenas faucibus ullamcorper eget eget sed vel quam eu.</p>
+                           <p>Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit pellentesque id. Lobortis felis maecenas bibendum tempus amet non molestie morbi. Vel tellus eget lacus porta blandit interdum pellentesque consectetur neque. Porttitor enim et ac tellus euismod dignissim. Diam nisl ultrices viverra cras eleifend. Facilisi ut ac turpis nibh viverra vitae eget vulputate pharetra. In maecenas faucibus ullamcorper eget eget sed vel quam eu. Velit urna sed ac dis ut ac laoreet lacus.</p>
+                        </div>
+                     </div>
+                     <div class="home-about__desc">
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit:</p>
+                        <ul>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed mauris vestibulum facilisi sit hendrerit pellentesque id. Lobortis felis maecenas bibendum tempus amet non molestie morbi. Vel tellus eget lacus porta blandit interdum pellentesque consectetur neque. Porttitor enim et ac tellus euismod dignissim.</p>
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <ol>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ol>
+                     </div>
+                     <button class="home-about__all link-more link-more_dn link-more_center">
+                        Читать далее<span>
+                           <svg class="icon">
+                              <use xlink:href="img/sprite.svg#arr-link"></use>
+                           </svg>
+                        </span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+            @@include('components/panelMenu/panelMenu.html', {home:'active'}) @@include('components/footer/footer.html', {})
+         </div>
+      </main>
+   </body>
+</html>

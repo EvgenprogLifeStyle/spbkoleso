@@ -1,0 +1,141 @@
+<div class="maps-home @@class">
+   <div class="container">
+      <h2 class="subtitle">@@title</h2>
+      <div class="maps-home__wrap flex">
+         <div class="maps-home__aside">
+            <div class="map-basket__sel flex dc">
+               <select class="select-custom">
+                  <option value="" disabled>Не выбран</option>
+                  <option value="Санкт-Петербург" checked>Санкт-Петербург</option>
+                  <option value="Всеволожск">Всеволожск</option>
+                  <option value="Зеленогорск">Зеленогорск</option>
+                  <option value="Колпино">Колпино</option>
+                  <option value="Кудрово">Кудрово</option>
+                  <option value="Красное село">Красное село</option>
+                  <option value="Москва">Москва</option>
+               </select>
+            </div>
+
+            <div class="map-basket__result res-map">
+               <div class="res-map__drop active">
+                  <div class="res-map__head"><span style="background-color: #e43a2d"></span>Невский р-н</div>
+                  <div class="res-map__body">
+                     <div class="res-map__item">
+                        <div class="res-map__name">
+                           <p>
+                              <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                           </p>
+                           <p>Октябрьская наб., д. 104, к. 13</p>
+                        </div>
+                        <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                        <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                        <button type="button" class="res-map__btn btn">Проложить маршрут</button>
+                     </div>
+                     <div class="res-map__item">
+                        <div class="res-map__name">
+                           <p>
+                              <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                           </p>
+                           <p>Октябрьская наб., д. 104, к. 13</p>
+                        </div>
+                        <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                        <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                        <button type="button" class="res-map__btn btn">Проложить маршрут</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="maps-home__tabs flex ch">
+            <button type="button" class="active" data-id="0">На карте</button>
+            <button type="button" data-id="1">Списком</button>
+         </div>
+
+         <div id="map" class="maps-home__iframe tab-item active" data-id="0"></div>
+         <div class="map-basket__result res-map tab-item" data-id="1">
+            <div class="res-map__drop active">
+               <div class="res-map__head"><span style="background-color: #e43a2d"></span>Невский р-н</div>
+               <div class="res-map__body">
+                  <div class="res-map__item">
+                     <div class="res-map__name">
+                        <p>
+                           <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                        </p>
+                        <p>Октябрьская наб., д. 104, к. 13</p>
+                     </div>
+                     <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                     <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                     <button type="button" class="res-map__btn btn btn-primary">Проложить маршрут</button>
+                  </div>
+                  <div class="res-map__item">
+                     <div class="res-map__name">
+                        <p>
+                           <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                        </p>
+                        <p>Октябрьская наб., д. 104, к. 13</p>
+                     </div>
+                     <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                     <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                     <button type="button" class="res-map__btn btn btn-primary">Проложить маршрут</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <script>
+            ymaps.ready(init);
+            // Создаём макет содержимого.
+
+            const data = [
+               {
+                  type: "Feature",
+                  id: 0,
+                  geometry: {
+                     type: "Point",
+                     coordinates: [59.938784, 30.314997],
+                  },
+                  properties: { balloonContentHeader: "<font size=3><b> Метка </b></font>" },
+               },
+               {
+                  type: "Feature",
+                  id: 1,
+                  geometry: {
+                     type: "Point",
+                     coordinates: [59.938884, 30.414997],
+                  },
+                  properties: { balloonContentHeader: "<font size=3><b> Метка </b></font>" },
+               },
+            ];
+            function init() {
+               var myMap = new ymaps.Map(
+                     "map",
+                     {
+                        center: [59.938784, 30.314997],
+                        zoom: 10,
+                     },
+                     {}
+                  ),
+                  objectManager = new ymaps.ObjectManager({
+                     // Чтобы метки начали кластеризоваться, выставляем опцию.
+                     clusterize: true,
+                     // ObjectManager принимает те же опции, что и кластеризатор.
+                     gridSize: 32,
+                     clusterDisableClickZoom: true,
+                  });
+
+               objectManager.objects.options.set("preset", "islands#redDotIcon");
+               objectManager.clusters.options.set("preset", "islands#redClusterIcons");
+               myMap.geoObjects.add(objectManager);
+
+               // $.ajax({
+               //     url: "data.json"
+               // }).done(function (data) {
+               //     objectManager.add(data);
+               // });
+
+               data.forEach((e) => objectManager.add(e));
+            }
+         </script>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,582 @@
+<div class="filter">
+    <div class="filter__head">
+        <div class="filter__title">Фильтры</div>
+        <button class="filter__close _close">
+            <svg class="icon">
+                <use xlink:href="@img/sprite.svg#clear"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="filter__wrap">
+        <div class="filter__item filter-auto">
+            <div class="filter__top">
+                <div class="filter__name">Подбор по автомобилю</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="box-form box-form_auto">
+                    <label class="box-form__label">1. Марка</label>
+                    <div class="select-box">
+                        <div class="select-box">
+                            <select class="select-custom" readonly>
+                                <option value="—" checked>—</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Mazda">Mazda</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-form box-form_auto disabled" id="step1">
+                    <label class="box-form__label">2. Модель</label>
+                    <div class="select-box">
+                        <select class="select-custom">
+                            <option value="—" checked>—</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                            <option value="60">60</option>
+                            <option value="65">65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-form box-form_auto disabled" id="step2">
+                    <label class="box-form__label">3. Год выпуска</label>
+                    <div class="select-box">
+                        <select class="select-custom">
+                            <option value="—" checked>—</option>
+                            <option value="135">135</option>
+                            <option value="145">145</option>
+                            <option value="155">155</option>
+                            <option value="165">165</option>
+                            <option value="175">175</option>
+                            <option value="185" disabled>185</option>
+                            <option value="195">195</option>
+                            <option value="200">200</option>
+                            <option value="205">205</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-form box-form_auto disabled" id="step3">
+                    <label class="box-form__label">4. Модификация</label>
+                    <div class="select-box">
+                        <select class="select-custom">
+                            <option value="—" checked>—</option>
+                            <option value="Производитель шин 1">Производитель шин 1</option>
+                            <option value="Производитель шин 2">Производитель шин 2</option>
+                            <option value="Производитель шин 3">Производитель шин 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-auto__bottom">
+                    <button class="filter-auto__send btn btn-primary filter-auto_send" disabled>Показать размеры</button>
+                    <button class="filter-auto__reset filter-auto_reset btn-reset" disabled>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#reset"></use>
+                        </svg>
+                        Сбросить параметры
+                        <span> Сбросить </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="filter__item filter-size active">
+            <div class="filter__top">
+                <div class="filter__name">Размеры</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="filter-size__default">
+                    <div class="box-form">
+                        <label class="box-form__label">Ширина</label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="135">135</option>
+                                <option value="145">145</option>
+                                <option value="155">155</option>
+                                <option value="165">165</option>
+                                <option value="175">175</option>
+                                <option value="185" disabled>185</option>
+                                <option value="195">195</option>
+                                <option value="200">200</option>
+                                <option value="205">205</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Высота</label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Диаметр</label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="Диаметр 1">Диаметр 1</option>
+                                <option value="Диаметр 2">Диаметр 2</option>
+                                <option value="Диаметр 3">Диаметр 3</option>
+                                <option value="Диаметр 4">Диаметр 4</option>
+                                <option value="Диаметр 5">Диаметр 5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-size__sport">
+                    <div class="box-form">
+                        <label class="box-form__label">Ширина <span>(передняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="135">135</option>
+                                <option value="145">145</option>
+                                <option value="155">155</option>
+                                <option value="165">165</option>
+                                <option value="175">175</option>
+                                <option value="185" disabled>185</option>
+                                <option value="195">195</option>
+                                <option value="200">200</option>
+                                <option value="205">205</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Высота <span>(передняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Диаметр <span>(передняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="Диаметр 1">Диаметр 1</option>
+                                <option value="Диаметр 2">Диаметр 2</option>
+                                <option value="Диаметр 3">Диаметр 3</option>
+                                <option value="Диаметр 4">Диаметр 4</option>
+                                <option value="Диаметр 5">Диаметр 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Ширина <span>(задняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="135">135</option>
+                                <option value="145">145</option>
+                                <option value="155">155</option>
+                                <option value="165">165</option>
+                                <option value="175">175</option>
+                                <option value="185" disabled>185</option>
+                                <option value="195">195</option>
+                                <option value="200">200</option>
+                                <option value="205">205</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Высота <span>(задняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-form">
+                        <label class="box-form__label">Диаметр <span>(задняя ось)</span></label>
+                        <div class="select-box">
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="Диаметр 1">Диаметр 1</option>
+                                <option value="Диаметр 2">Диаметр 2</option>
+                                <option value="Диаметр 3">Диаметр 3</option>
+                                <option value="Диаметр 4">Диаметр 4</option>
+                                <option value="Диаметр 5">Диаметр 5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-sport-filter" class="sport-checkbox" />
+                    <label for="ch-sport-filter">Спорт комплект</label>
+                    <div class="help help_sport openSport">
+                        <div class="help__icon">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#help"></use>
+                            </svg>
+                        </div>
+                        <!-- <div class="help__text">Подбор разных размеров на переднюю и заднюю оси автомобиля</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__item flex dc">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="ch-run-1" />
+                <label for="ch-run-1">Run flat</label>
+                <div class="help help_run openRun">
+                    <div class="help__icon">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#help"></use>
+                        </svg>
+                    </div>
+                    <!-- <div class="help__text">Технология, позволяющая в случае прокола проехать на спущенной шине до 150 км</div> -->
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="ch-run-2" />
+                <label for="ch-run-2">XL (Extra load)</label>
+                <div class="help help_xl">
+                    <div class="help__icon">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#help"></use>
+                        </svg>
+                    </div>
+                    <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__item active">
+            <div class="filter__top">
+                <div class="filter__name">Сезон</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body filter-season">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-season-1" />
+                    <label for="ch-filter-season-1">
+                        <span>
+                            <img src="@img/icons/season_01_1.svg" alt="season_icon" />
+                        </span>
+                        Летние
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-season-2" />
+                    <label for="ch-filter-season-2">
+                        <span>
+                            <img src="@img/icons/season_02_1.svg" alt="season_icon" />
+                        </span>
+                        Зимние шипованные
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-season-3" />
+                    <label for="ch-filter-season-3">
+                        <span>
+                            <img src="@img/icons/season_03_1.svg" alt="season_icon" />
+                        </span>
+                        Зимние нешипованные
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-season-4" />
+                    <label for="ch-filter-season-4">
+                        <span>
+                            <img src="@img/icons/season_04_1.svg" alt="season_icon" />
+                        </span>
+                        Всесезонные
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="all-season-filter" />
+                    <label for="all-season-filter"> Все </label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__item active filter-price">
+            <div class="filter__top">
+                <div class="filter__name">Цена, ₽</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="filter-price__wrap flex">
+                    <div class="filter-price__item">
+                        <span>от</span>
+                        <input type="text" value="3000" id="formatting-start" />
+                    </div>
+                    <div class="filter-price__item">
+                        <span>до</span>
+                        <input type="text" value="120000" id="formatting-end" />
+                    </div>
+                </div>
+
+                <div id="formatting-slider" class="filter-price__range"></div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        //idRange,minPrice,maxPrice,startPrice,endPrice
+                        priceRange("formatting-slider", 3000, 120000, 3000, 120000);
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="filter__item filter-ackii active">
+            <div class="filter__top">
+                <div class="filter__name">Акции</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-akcii-1" />
+                    <label for="ch-filter-akcii-1"> Бесплатный шиномонтаж </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="ch-filter-akcii-2" />
+                    <label for="ch-filter-akcii-2"> Бесплатное хранение </label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__item filter-check active" data-count="15">
+            <div class="filter__top">
+                <div class="filter__name">Производитель шин</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="filter-check__search">
+                    <input type="text" name="" id="" class="input" placeholder="Введите название" />
+                    <button class="filter-check__send flex-cc">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter__overlay">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-1" />
+                        <label for="ch-filter-shina-1"> Bridgestone</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-2" />
+                        <label for="ch-filter-shina-2"> Centara </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-3" />
+                        <label for="ch-filter-shina-3"> Continental </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-4" />
+                        <label for="ch-filter-shina-4"> Cordiant </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-5" />
+                        <label for="ch-filter-shina-5"> GoodYear </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-6" />
+                        <label for="ch-filter-shina-6"> GT Radial </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-7" />
+                        <label for="ch-filter-shina-7"> Hankook </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-8" />
+                        <label for="ch-filter-shina-8"> Ikon Tyres </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-9" />
+                        <label for="ch-filter-shina-9"> Kumho </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-10" />
+                        <label for="ch-filter-shina-10"> LandSail </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-11" />
+                        <label for="ch-filter-shina-11"> Matador </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-12" />
+                        <label for="ch-filter-shina-12"> Michelin </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-13" />
+                        <label for="ch-filter-shina-13"> Nexen </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-14" />
+                        <label for="ch-filter-shina-14"> Nokian Tyres </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-15" />
+                        <label for="ch-filter-shina-15"> Ovation Tyres </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-16" />
+                        <label for="ch-filter-shina-16"> Pirelli </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-shina-17" />
+                        <label for="ch-filter-shina-17"> Pirelli </label>
+                    </div>
+                </div>
+                <div class="filter-check__btn">Показать все</div>
+            </div>
+        </div>
+        <div class="filter__item filter-check active" data-count="5">
+            <div class="filter__top">
+                <div class="filter__name">Страна бренда</div>
+                <div class="filter__arr">
+                    <img src="@img/icons/arr_drop_filter.svg" alt="arr_drop_filter_icon" />
+                </div>
+            </div>
+            <div class="filter__body">
+                <div class="filter-check__search">
+                    <input type="text" name="" id="" class="input" placeholder="Введите название" />
+                    <button class="filter-check__send flex-cc">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter__overlay">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-1" />
+                        <label for="ch-filter-name-1"> Название</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-2" />
+                        <label for="ch-filter-name-2"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-3" />
+                        <label for="ch-filter-name-3"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-4" />
+                        <label for="ch-filter-name-4"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-5" />
+                        <label for="ch-filter-name-5"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-6" />
+                        <label for="ch-filter-name-6"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-7" />
+                        <label for="ch-filter-name-7"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-8" />
+                        <label for="ch-filter-name-8"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-9" />
+                        <label for="ch-filter-name-9"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-10" />
+                        <label for="ch-filter-name-10"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-11" />
+                        <label for="ch-filter-name-11"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-12" />
+                        <label for="ch-filter-name-12"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-13" />
+                        <label for="ch-filter-name-13"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-14" />
+                        <label for="ch-filter-name-14"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-15" />
+                        <label for="ch-filter-name-15"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-16" />
+                        <label for="ch-filter-name-16"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-17" />
+                        <label for="ch-filter-name-17"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-18" />
+                        <label for="ch-filter-name-18"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-19" />
+                        <label for="ch-filter-name-19"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-20" />
+                        <label for="ch-filter-name-20"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-21" />
+                        <label for="ch-filter-name-21"> Название </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="ch-filter-name-22" />
+                        <label for="ch-filter-name-22"> Название </label>
+                    </div>
+                </div>
+                <div class="filter-check__btn">Показать все</div>
+            </div>
+        </div>
+        <div class="filter__item flex dc">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="ch-filter-stock-1" />
+                <label for="ch-filter-stock-1">Остаток от 4 шт.</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="ch-filter-stock-2" />
+                <label for="ch-filter-stock-2">В наличии</label>
+            </div>
+        </div>
+        <button class="result-filter">Показать 4899 товаров</button>
+    </div>
+    <div class="filter__bottom">
+        <button class="filter__send btn btn-primary">Показать 7016 товаров</button>
+        <button class="filter__reset btn-reset">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#reset"></use>
+            </svg>
+            Сбросить параметры
+            <span> Сбросить </span>
+        </button>
+    </div>
+</div>

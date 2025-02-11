@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Покраска дисков в СПб" })
+    <body>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Покраска дисков в СПб</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Покраска дисков в СПб</h1>
+                    </div>
+                </div>
+                <div class="paint">
+                    <div class="container">
+                        <div class="section-p mt_40">
+                            <h2 class="h3">Виды дисков, с которыми мы работаем</h2>
+                            <div class="section-p__list flex">
+                                <a href="#" class="section-p__item">
+                                    <div class="section-p__head">ЛИТЫЕ ДИСКИ</div>
+                                    <div class="section-p__img"><img src="@img/all/paint_01.png" alt="картинка диска" /></div>
+                                    <div class="section-p__text">Покраска литых дисков требует тщательной подготовки поверхности и точного нанесения красящего слоя для достижения устойчивости к внешним воздействиям. Мы используем специализированные грунтовки и краски, гарантирующие максимальную адгезию к алюминиевым сплавам.</div>
+                                </a>
+                                <a href="#" class="section-p__item">
+                                    <div class="section-p__head">Штампованные диски</div>
+                                    <div class="section-p__img"><img src="@img/all/paint_02.png" alt="картинка диска" /></div>
+                                    <div class="section-p__text">Штампованные диски отличаются высокой надежностью и прочностью. Наши мастера применяют специальные техники шлифовки и полировки для устранения любых дефектов перед мх грунтовкой.</div>
+                                </a>
+                                <a href="#" class="section-p__item">
+                                    <div class="section-p__head">Кованые диски</div>
+                                    <div class="section-p__img"><img src="@img/all/paint_03.png" alt="картинка диска" /></div>
+                                    <div class="section-p__text">В основе создания кованых дисков используются методы горячей штамповки и холодного формования. Технология изготовления таких дисков достаточно непроста, так как в ее производстве основной задачей является создание для заготовки многослойной волокнистой структуры.</div>
+                                </a>
+                            </div>
+                            <p class="section-p__info">Каждый тип диска требует уникального подхода. Порошковая покраска подходит для обеспечения прочного и долговечного покрытия.</p>
+                        </div>
+                    </div>
+                    <div class="price-paint bg-gray pb_80 mt_80 pt_80 mbm_80">
+                        <div class="container">
+                            <div class="price-paint__wrap flex as sb">
+                                <div class="price-paint__content">
+                                    <h2 class="subtitle">От чего зависит стоимость</h2>
+                                    <div class="text">
+                                        <p>Стоимость рассчитывается на основе ключевых параметров и поможет сориентироваться в ценообразовании:</p>
+                                        <ol>
+                                            <li>В первую очередь, на тарифы услуг по окрашиванию влияет тип диска, который подлежит реставрации. Литые, кованые и штампованные виды имеют особенности, что и отражается в итоговой стоимости;</li>
+                                            <li>Сложность дизайна, такая как наличие мелких деталей или нестандартных элементов;</li>
+                                            <li>Выбор краски и материалов для грунтовки;</li>
+                                            <li>Дополнительные услуги, такие как покрытие защитным лаком, демонтаж и монтаж шин, балансировка колес и т.д.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="price-paint__cart">
+                                    <a href="tel:+78127030373" class="price-paint__phone">
+                                        <span><img src="@img/icons/phone_white.svg" alt="иконка телефона" /></span>
+                                        +7 (812) 703-03-73
+                                    </a>
+                                    <div class="price-paint__desc">
+                                        <p>Если вы хотите обновить диски и защитить их от воздействия внешних факторов, позвоните по 8 (812) 703-03-73.</p>
+                                        <p>Мы с удовольствием ответим на ваши вопросы и подскажем решение, соответствующее бюджету и требованиям.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

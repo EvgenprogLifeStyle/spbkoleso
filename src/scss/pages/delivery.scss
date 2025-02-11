@@ -1,0 +1,304 @@
+.delivery {
+  margin-top: 40px;
+
+  @include sm {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  // .delivery__wrap
+  &__wrap {
+    gap: 110px;
+
+    @include lg {
+      gap: 46px;
+    }
+
+    @include sm {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
+
+  // .delivery__content
+  &__content {
+    padding-top: 32px;
+
+    @include sm {
+      padding-top: 0;
+    }
+  }
+
+  // .delivery__list
+  &__list {}
+
+  // .delivery__item
+  &__item {
+    gap: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @include sm {
+        margin-bottom: 12px;
+      }
+    }
+
+    // .delivery__item_green
+    &_green {
+      span {
+        background: #31b536;
+      }
+
+      h4 {
+        color: #31b536;
+      }
+    }
+
+    // .delivery__icon_yellow
+    &_yellow {
+      span {
+        background: #e7ae1c;
+      }
+
+      h4 {
+        color: #e7ae1c;
+
+      }
+    }
+  }
+
+  // .delivery__icon
+  &__icon {
+    box-shadow: 4px 4px 16px 0 rgba(40, 40, 40, 0.04);
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+
+    span {
+      border-radius: 8px;
+      width: 16px;
+      height: 6px;
+      display: inline-block;
+    }
+  }
+
+  // .delivery__text
+  &__text {
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 4px;
+    }
+  }
+
+  // .delivery__info
+  &__info {
+    margin-top: 32px;
+    margin-bottom: 40px;
+
+    @include sm {
+      margin-top: 12px;
+    }
+  }
+
+  // .delivery__war
+  &__war {
+    gap: 6px;
+    margin-top: auto;
+
+    @include sm {
+      align-items: center;
+    }
+
+    span {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  // .delivery__map
+  &__map {
+    width: 58%;
+    border-radius: 8px;
+    min-height: 464px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @include lg {
+      width: 52%;
+    }
+
+    @include md {
+      width: 42%;
+    }
+
+    @include sm {
+      width: 100%;
+      min-height: 320px;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.send-d {
+  margin-top: 40px;
+  overflow: hidden;
+
+  @include sm {
+    margin-top: 20px;
+  }
+
+  // .send-d__wrap
+  &__wrap {}
+
+  // .send-d__left
+  &__left {}
+
+
+  // .send-d__list
+  &__list {
+    margin-top: 24px;
+    gap: 20px;
+
+    @include md {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+  }
+
+  // .send-d__item
+  &__item {
+    box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.1);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    width: 304px;
+    flex-shrink: 0;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+
+    @include lg {
+      width: 264px;
+    }
+
+    @include md {
+      width: 100%;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      color: #e43a2d;
+      margin-bottom: 32px;
+
+      @include sm {
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      line-height: 140%;
+      font-size: 14px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  // .send-d__info
+  &__info {
+    position: relative;
+    margin-left: 108px;
+    flex: 1;
+
+    @include lg {
+      margin-left: 8px;
+    }
+
+    @include md {
+      width: 100%;
+      flex: 0 0 100%;
+      margin: 68px 0px 0px 0px;
+    }
+
+    &::after {
+      content: '';
+      background: url('../img/all/Russia.png') center/contain no-repeat;
+      width: 400px;
+      height: 250px;
+      position: absolute;
+      top: -52px;
+      left: 56px;
+
+      @include md {
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px;
+        height: 224px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+
+  // .send-d__desc
+  &__desc {
+    font-size: 16px;
+
+  }
+
+
+  // .send-d__over
+  &__over {
+    gap: 20px;
+
+    @include md {
+      flex-direction: column-reverse;
+      gap: 12px;
+    }
+  }
+
+  // .send-d__banner
+  &__banner {
+    width: 40%;
+    flex-shrink: 0;
+    aspect-ratio: 520 / 264;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include md {
+      width: 100%;
+      aspect-ratio: 320 / 200;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left bottom;
+    }
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+   @@include('components/head.html', { "title":"ЛК" })
+
+   <body>
+      <main class="main">
+         @@include('components/header/header.html', {})
+         <div class="wrapper">
+            <div class="head-db bg-gray">
+               <div class="container">
+                  <h1 class="title mt_0">Личный кабинет</h1>
+               </div>
+            </div>
+            <div class="head-lk bg-gray">
+               <div class="container">
+                  <div class="head-lk__wrap flex">
+                     <div class="head-lk__item info-lk">
+                        <h3 class="subtitle">Петров Иван Иванович</h3>
+                        <div class="info-lk__items flex fw">
+                           <div class="info-lk__item">
+                              <div>Телефон</div>
+                              <div><a href="tel:+79001234567" class="link">+7 (900) 123-45-67</a></div>
+                           </div>
+                           <div class="info-lk__item info-lk__item_address">
+                              <div>Адрес доставки</div>
+                              <div>г. Санкт-Петербург, ул. Бутлерова, д. 11 к3</div>
+                           </div>
+                           <div class="info-lk__item">
+                              <div>Email</div>
+                              <div><a href="mailto:petrov@mail.ru" class="link">petrov@mail.ru</a></div>
+                           </div>
+                        </div>
+                        <div class="info-lk__bottom flex">
+                           <button class="btn btn-primary openEp">Редактировать профиль</button>
+                           <button class="btn btn-black-outline openEPass">Сменить пароль</button>
+                        </div>
+                     </div>
+                     <div class="head-lk__item ball-lk ">
+                        <div class="ball-lk__head flex cv sb">
+                           <h3 class="subtitle">Мои баллы</h3>
+                           <button class="link-underline openBall">Как накопить?</button>
+                        </div>
+
+                        <div class="ball-lk__items">
+                           <div class="ball-lk__item">
+                              <div>Текущая скидка</div>
+                              <div><span>15%</span></div>
+                           </div>
+                           <div class="ball-lk__item">
+                              <div>Накоплено баллов</div>
+                              <div>1000</div>
+                           </div>
+                           <div class="ball-lk__item">
+                              <div>Баллов в резерве</div>
+                              <div>300</div>
+                           </div>
+                        </div>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="order-lk">
+                  <h2 class="title">Мои заказы</h2>
+                  <div class="order-lk__list">
+                     <div class="order-lk__item active">
+                        <div class="order-lk__head flex sb cv">
+                           <div class="info-lk">
+                              <div class="info-lk__top flex cv">
+                                 <div class="info-lk__num flex cv">Заказ №<span>83745602</span></div>
+                                 <div class="status status_job">Принят в работу</div>
+                              </div>
+                              <div class="info-lk__list flex cv">
+                                 <div class="info-lk__item">
+                                    <div>Дата создания:</div>
+                                    <div>21.01.2024</div>
+                                 </div>
+                                 <div class="info-lk__item">
+                                    <div></div>
+                                    <div></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="price-lk right flex">
+                              <div class="price-lk__overlay">
+                                 <div class="price-lk__top flex">
+                                    <div class="price-lk__num">5 товаров на сумму</div>
+                                    <div class="price-lk__price">35 657 ₽</div>
+                                 </div>
+                                 <div class="price-lk__item">Накоплено баллов: 3565</div>
+                                 <div class="price-lk__item">Списано баллов: 100</div>
+                              </div>
+                              <button class="price-lk__arr flex-cc">
+                                 <img src="img/icons/down.svg" alt="иконка стрелки" />
+                              </button>
+                           </div>
+                        </div>
+                        <div class="prod-llk">
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/01.png" alt="картинка" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 2955670</div>
+                                    <a href="#" class="prod-llk__name link">Шина Triangle Group WinterX TW401</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">
+                                          <span><img src="img/icons/season_02_1.svg" alt="icon" /></span>
+                                       </div>
+                                       <div class="prod-llk__man">205/50</div>
+                                       <div class="prod-llk__man">R17</div>
+                                       <div class="prod-llk__man">93V</div>
+                                       <div class="prod-llk__man">XL</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    6 558 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>4 шт.
+                                 </div>
+                                 <div class="prod-llk__price">26 232 ₽</div>
+                              </div>
+                           </div>
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/11.png" alt="картинка товара" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 4567938</div>
+                                    <a href="#" class="prod-llk__name link">Масло AVOL STREICHERT s_PUR 5W-30 1л</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">5W-30</div>
+                                       <div class="prod-llk__man">30001</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    2 160 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>1 шт.
+                                 </div>
+                                 <div class="prod-llk__price">2 160 ₽</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order-lk__item">
+                        <div class="order-lk__head flex sb cv">
+                           <div class="info-lk">
+                              <div class="info-lk__top flex cv">
+                                 <div class="info-lk__num flex cv">Заказ №<span>83745602</span></div>
+                                 <div class="status status_success">Выполнен</div>
+                              </div>
+                              <div class="info-lk__list flex cv">
+                                 <div class="info-lk__item">
+                                    <div>Дата создания:</div>
+                                    <div>21.01.2024</div>
+                                 </div>
+                                 <div class="info-lk__item">
+                                    <div>Дата отгрузки:</div>
+                                    <div>21.02.2024</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="price-lk right flex">
+                              <div class="price-lk__overlay">
+                                 <div class="price-lk__top flex">
+                                    <div class="price-lk__num">5 товаров на сумму</div>
+                                    <div class="price-lk__price">35 657 ₽</div>
+                                 </div>
+                                 <div class="price-lk__item">Накоплено баллов: 3565</div>
+                                 <div class="price-lk__item">Списано баллов: 100</div>
+                              </div>
+                              <button class="price-lk__arr flex-cc">
+                                 <img src="img/icons/down.svg" alt="иконка стрелки" />
+                              </button>
+                           </div>
+                        </div>
+                        <div class="prod-llk">
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/01.png" alt="картинка" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 2955670</div>
+                                    <a href="#" class="prod-llk__name link">Шина Triangle Group WinterX TW401</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">
+                                          <span><img src="img/icons/season_02_1.svg" alt="icon" /></span>
+                                       </div>
+                                       <div class="prod-llk__man">205/50</div>
+                                       <div class="prod-llk__man">R17</div>
+                                       <div class="prod-llk__man">93V</div>
+                                       <div class="prod-llk__man">XL</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    6 558 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>4 шт.
+                                 </div>
+                                 <div class="prod-llk__price">26 232 ₽</div>
+                              </div>
+                           </div>
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/11.png" alt="картинка товара" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 4567938</div>
+                                    <a href="#" class="prod-llk__name link">Масло AVOL STREICHERT s_PUR 5W-30 1л</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">5W-30</div>
+                                       <div class="prod-llk__man">30001</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    2 160 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>1 шт.
+                                 </div>
+                                 <div class="prod-llk__price">2 160 ₽</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order-lk__item">
+                        <div class="order-lk__head flex sb cv">
+                           <div class="info-lk">
+                              <div class="info-lk__top flex cv">
+                                 <div class="info-lk__num flex cv">Заказ №<span>83745602</span></div>
+                                 <div class="status status_success">Выполнен</div>
+                              </div>
+                              <div class="info-lk__list flex cv">
+                                 <div class="info-lk__item">
+                                    <div>Дата создания:</div>
+                                    <div>21.01.2024</div>
+                                 </div>
+                                 <div class="info-lk__item">
+                                    <div>Дата отгрузки:</div>
+                                    <div>21.02.2024</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="price-lk right flex">
+                              <div class="price-lk__overlay">
+                                 <div class="price-lk__top flex">
+                                    <div class="price-lk__num">5 товаров на сумму</div>
+                                    <div class="price-lk__price">35 657 ₽</div>
+                                 </div>
+                                 <div class="price-lk__item">Накоплено баллов: 3565</div>
+                                 <div class="price-lk__item">Списано баллов: 100</div>
+                              </div>
+                              <button class="price-lk__arr flex-cc">
+                                 <img src="img/icons/down.svg" alt="иконка стрелки" />
+                              </button>
+                           </div>
+                        </div>
+                        <div class="prod-llk">
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/01.png" alt="картинка" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 2955670</div>
+                                    <a href="#" class="prod-llk__name link">Шина Triangle Group WinterX TW401</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">
+                                          <span><img src="img/icons/season_02_1.svg" alt="icon" /></span>
+                                       </div>
+                                       <div class="prod-llk__man">205/50</div>
+                                       <div class="prod-llk__man">R17</div>
+                                       <div class="prod-llk__man">93V</div>
+                                       <div class="prod-llk__man">XL</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    6 558 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>4 шт.
+                                 </div>
+                                 <div class="prod-llk__price">26 232 ₽</div>
+                              </div>
+                           </div>
+                           <div class="prod-llk__item flex cv sb">
+                              <div class="prod-llk__content flex">
+                                 <a href="#" class="prod-llk__img">
+                                    <img src="@img/product/prev/11.png" alt="картинка товара" />
+                                 </a>
+                                 <div class="prod-llk__info flex dc">
+                                    <div class="prod-llk__art">Артикул: 4567938</div>
+                                    <a href="#" class="prod-llk__name link">Масло AVOL STREICHERT s_PUR 5W-30 1л</a>
+                                    <div class="prod-llk__manuf flex cv fw">
+                                       <div class="prod-llk__man">5W-30</div>
+                                       <div class="prod-llk__man">30001</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="prod-llk__control flex cv">
+                                 <div class="prod-llk__count flex cv">
+                                    2 160 ₽ <span><img src="@img/icons/x.svg" alt="иконка" /></span>1 шт.
+                                 </div>
+                                 <div class="prod-llk__price">2 160 ₽</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="stock-list pt_32 mbm_80 mt_40 pb_80 bg-gray">
+               <div class="container">
+                  <h2 class="subtitle">Специальные предложения</h2>
+                  <div class="stock-list__items flex fw">
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/01.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/02.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/03.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/04.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/04.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/03.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/01.png" alt="stock_img" />
+                     </a>
+                     <a href="#" class="stock-list__item">
+                        <img src="@img/stock/prev/02.png" alt="stock_img" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+            @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+         </div>
+         @@include('components/footer/footer.html', {})
+      </main>
+   </body>
+</html>

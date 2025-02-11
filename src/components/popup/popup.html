@@ -1,0 +1,668 @@
+<div class="popup-help" style="display: none" id="popup-help">
+    <div class="popup-help__title"></div>
+    <div class="popup-help__text"></div>
+</div>
+<div class="popup-help" style="display: none" id="popup-run">
+    <div class="popup-help__title">Run flat</div>
+    <div class="popup-help__text">Технология, позволяющая в случае прокола проехать на спущенной шине до 150 км</div>
+</div>
+<div class="popup-help" style="display: none" id="popup-sport">
+    <div class="popup-help__title">Спорт комплект</div>
+    <div class="popup-help__text">Подбор разных размеров на переднюю и заднюю оси автомобиля</div>
+</div>
+<!-- <div class="popup popup_feedback"> -->
+<div class="popup popup_modal" id="popup">
+    <div class="popup__title">Перезвоните мне</div>
+    <form class="popup__form" data-parsley-validate>
+        <div class="input-box">
+            <label>Имя<span>*</span></label>
+            <input type="text" class="input _text" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+            <div class="error">
+                <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                <div class="error__text">Необходимое поле</div>
+            </div>
+        </div>
+        <div class="input-box">
+            <label>Телефон<span>*</span></label>
+            <input type="tel" class="input phone" placeholder="+7 (___) ___ __ __" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" />
+            <div class="error">
+                <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                <div class="error__text">Неверный формат</div>
+            </div>
+        </div>
+        <button class="popup__btn btn btn-primary">Отправить</button>
+        <div class="popup__polit">
+            Нажимая на данную кнопку вы даёте согласие на
+            <a href="#" target="_blank" rel="nofollow">обработку персональных данных</a>
+        </div>
+    </form>
+</div>
+<div class="popup popup_modal popup-ep modal-sm-full" id="edit-profile">
+    <div class="popup__title">Редактирование профиля</div>
+    <form action="#" class="popup__body popup-ep__form">
+        <div class="row row-16">
+            <div class="input-box col-2">
+                <label>Фамилия<span>*</span></label>
+                <input type="text" class="input _text" value="Иванов" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Необходимое поле</div>
+                </div>
+            </div>
+            <div class="input-box col-2">
+                <label>Имя<span>*</span></label>
+                <input type="text" class="input _text" value="Иван" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Необходимое поле</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-16">
+            <div class="input-box col-2">
+                <label>Отчество<span>*</span></label>
+                <input type="text" class="input _text" value="Иванович" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Необходимое поле</div>
+                </div>
+            </div>
+            <div class="input-box col-2">
+                <label>Телефон<span>*</span></label>
+                <input type="tel" class="input phone" value="+7 900 000 00 00" placeholder="+7 (___) ___ __ __" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-16">
+            <div class="input-box">
+                <label>Email<span>*</span></label>
+                <input type="email" class="input" value="mail@mail.ru" maxlength="64" required placeholder="mail@mail.ru" data-parsley-required-message="" data-parsley-type="email" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box">
+                <label>Адрес доставки<span>*</span></label>
+                <input type="text" class="input _text" value="г. Санкт-Петербург, ул. Бутлерова, д. 11 к3" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__bottom popup-ep__bottom flex cv je">
+            <button type="button" class="btn btn-outline">Отменить</button>
+            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+        </div>
+    </form>
+</div>
+<div class="popup popup_modal popup-ep modal-sm-full" id="edit-password">
+    <div class="popup__title">Смена пароля</div>
+    <form action="#" class="popup__body popup-ep__form">
+        <div class="row">
+            <div class="input-box">
+                <label>Старый пароль</label>
+                <input id="password1" name="password" type="password" class="input" data-parsley-minlength="1" data-parsley-required />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box">
+                <label>Новый пароль</label>
+                <input id="password2" name="password" type="password" class="input" data-parsley-minlength="1" data-parsley-required />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box">
+                <label>Повторите новый пароль</label>
+                <input id="password3" name="password" type="password" class="input" data-parsley-minlength="1" data-parsley-required-message="" data-parsley-required data-parsley-equalto="#password2" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Пароли не совпадают</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__bottom popup-ep__bottom flex cv sb">
+            <button type="button" class="link-underline openRecovery" data-da="#edit-password .popup__body,767">Забыли пароль?</button>
+            <div class="popup-ep__btns flex"><button type="button" class="btn btn-outline">Отменить</button> <button type="button" class="btn btn-primary">Сохранить изменения</button></div>
+        </div>
+    </form>
+</div>
+<div class="popup popup_modal popup-ep" id="recovery">
+    <div class="popup__title">Восстановление пароля</div>
+    <form action="#" class="popup__body popup-ep__form">
+        <div class="row">
+            <div class="input-box">
+                <label>Введите email</label>
+                <input type="email" class="input" maxlength="64" required placeholder="mail@mail.ru" data-parsley-required-message="" data-parsley-type="email" />
+                <div class="error">
+                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                    <div class="error__text">Неверный формат</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__bottom popup-ep__bottom flex cv sb"><button type="button" class="btn btn-outline openEPass">Назад</button> <button type="button" class="btn btn-primary">Восстановить</button></div>
+    </form>
+</div>
+<div class="popup popup_modal popup-ep" id="recovery-success">
+    <div class="popup__title">Восстановление пароля</div>
+    <div class="popup__body">
+        <div class="popup__text">Письмо с новым паролем отправлено Вам на указанный email</div>
+    </div>
+</div>
+<div class="popup popup_modal popup-ep modal-sm-full" id="ball-info">
+    <div class="popup__title">Накопление баллов</div>
+    <div class="popup__body">
+        <div class="popup__text">Таким образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание дальнейших направлений развития.</div>
+    </div>
+</div>
+<div class="popup popup_modal monuf-popup" style="display: none" id="popup-manuf">
+    <div class="popup__title">Популярные производители</div>
+    <div class="monuf-popup__body flex fw">
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+        <div class="input-box input-box_radio">
+            <label>
+                <input type="checkbox" class="input" />
+                <span>Brigestone</span>
+            </label>
+        </div>
+    </div>
+    <div class="monuf-popup__bottom flex cv sb">
+        <div class="monuf-popup__count">Выбрано: <span>1</span></div>
+        <div class="monuf-popup__btns flex cv">
+            <button class="monuf-popup__clear">Отменить выбор</button>
+            <button class="btn btn-primary">Применить</button>
+        </div>
+    </div>
+</div>
+<div class="popup popup_modal sdt-popup" id="popup-sdt">
+    <div class="sdt">
+        <div class="tab-sdt flex">
+            <button id="btn-split-p" class="tab-sdt__btn active" data-id="0">
+                <span><img src="@img/icons/split.svg" alt="icon" /></span>СПЛИТ
+            </button>
+            <button id="btn-dol-p" class="tab-sdt__btn" data-id="1">
+                <span><img src="@img/icons/dol_all.svg" alt="icon" /></span>
+            </button>
+            <button class="tab-sdt__btn" data-id="2">
+                <span><img src="@img/icons/tbank.svg" alt="icon" /></span>
+            </button>
+        </div>
+        <div class="tab-sdt">
+            <div class="tab-sdt__item active" data-id="0">
+                <div class="head-sdt center">
+                    <div class="head-sdt__up">
+                        <span><img src="@img/icons/split.svg" alt="icon" /></span>СПЛИТ — ОПЛАТА ЧАСТЯМИ
+                    </div>
+                    <div class="head-sdt__name">Спишем 1/4 стоимости покупки, остальное потом</div>
+                    <div class="head-sdt__desc">
+                        <p>Оплачивайте покупку любой картой, привязанной к вашему Яндекс ID</p>
+                        <p>
+                            Заплатить можно сразу полную сумму или разбить <br />
+                            цену на части — с помощью Сплита
+                        </p>
+                    </div>
+                </div>
+                <div class="cont-sdt">
+                    <div class="proc-sdt flex">
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Платеж сегодня</small>
+                            </div>
+                            <div class="proc-s in"></div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 2 недели</small>
+                            </div>
+                            <div class="proc-s"></div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 4 недели</small>
+                            </div>
+                            <div class="proc-s"></div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 6 недель</small>
+                            </div>
+                            <div class="proc-s"></div>
+                        </div>
+                    </div>
+                    <ul class="cont-sdt__list">
+                        <li>Первый платеж — 1/4 стоимости покупки</li>
+                        <li>Оставшиеся деньги — по графику раз в две недели</li>
+                        <li>Также доступен длинный сплит — на 4 или 6 месяцев</li>
+                    </ul>
+                </div>
+                <div class="tab-sdt__info center">Используя Яндекс Пей вы соглашаетесь с условиями <a href="#">оферты</a></div>
+            </div>
+            <div class="tab-sdt__item" data-id="1">
+                <div class="head-sdt center">
+                    <div class="head-sdt__up">
+                        <span><img src="@img/icons/dol_all.svg" alt="icon" /></span>
+                    </div>
+                    <div class="head-sdt__name">Оплатите долями только 25% стоимости покупки</div>
+                    <div class="head-sdt__desc">
+                        <p>
+                            Оставшиеся платежи спишутся автоматически <br />
+                            с шагом в две недели
+                        </p>
+                    </div>
+                </div>
+                <div class="cont-sdt">
+                    <div class="proc-sdt proc-sdt_big flex">
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Платеж сегодня</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/dol_01.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 2 недели</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/dol_02.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 4 недели</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/dol_03.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 6 недель</small>
+                            </div>
+                            <div class="proc-d"><img src="@img/icons/check_border_green.svg" alt="icon" /></div>
+                        </div>
+                    </div>
+                    <ul class="cont-sdt__list">
+                        <li>Оплачивайте покупки частями — по 25% каждые 2 недели</li>
+                        <li>Никаких дополнительных платежей — как обычная оплата картой</li>
+                    </ul>
+                </div>
+                <div class="tab-sdt__info center">Подробную информацию о работе сервиса можно посмотреть на сайте <a href="#">dolyami.ru</a></div>
+            </div>
+            <div class="tab-sdt__item" data-id="2">
+                <div class="head-sdt center">
+                    <div class="head-sdt__up">
+                        <span><img src="@img/icons/tbank.svg.svg" alt="icon" /></span>
+                    </div>
+                    <div class="head-sdt__name">Рассрочка от Т-Банка</div>
+                    <div class="head-sdt__desc">
+                        <p>Без переплат за 2 минуты</p>
+                    </div>
+                </div>
+                <div class="cont-sdt">
+                    <div class="proc-sdt proc-sdt_big flex">
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Платеж сегодня</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/tbank_01.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 2 недели</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/tbank_02.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 4 недели</small>
+                            </div>
+                            <div class="proc-d in">
+                                <img src="@img/icons/tbank_03.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <div class="proc-sdt__item">
+                            <div class="center">
+                                <p>25 %</p>
+                                <small>Через 6 недель</small>
+                            </div>
+                            <div class="proc-d"><img src="@img/icons/check_border_green.svg" alt="icon" /></div>
+                        </div>
+                    </div>
+                    <ul class="cont-sdt__list">
+                        <li>4 месяца</li>
+                        <li>Сумма покупки от 3 000 до 500 000 ₽</li>
+                        <li>Достаточно только паспорта</li>
+                        <li>Подписание с помощью СМС</li>
+                    </ul>
+                </div>
+                <div class="tab-sdt__info center">Подробнее о работе сервиса можно посмотреть на этой <a href="#">странице</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup_modal b-popup" id="popup-clear">
+    <div class="popup__title">Очищение корзины</div>
+    <div class="popup__text">Уверены, что хотите очистить корзину?</div>
+    <button class="popup__btn btn btn-primary">Очистить</button>
+</div>
+<div class="popup popup_modal b-popup" id="popup-del">
+    <div class="popup__title">Удаление товара</div>
+    <div class="popup__text">Уверены, что хотите удалить товар? Отменить действие будет невозможно.</div>
+    <button class="popup__btn btn btn-primary">Удалить</button>
+</div>
+<div class="popup popup_modal order-popup" id="popup-order">
+    <div class="popup__title">Оформление быстрого заказа</div>
+    <div class="order-popup__body">
+        <div class="order-popup__line">Имя: <span>Иван</span></div>
+        <div class="order-popup__line">Телефон: <span>+ 7 (900) 000-00-00</span></div>
+        <div class="order-popup__feed">Мы свяжемся с Вами для уточнения данных заказа</div>
+    </div>
+    <div class="order-popup__bottom flex je">
+        <button type="button" class="order-popup__back btn">Отмена</button>
+        <button type="button" class="order-popup__send btn btn-primary">Оформить заказ</button>
+    </div>
+</div>
+<div class="popup popup_modal order-popup" id="popup-detail">
+    <div class="popup__title">Описание Bridgestone Blizzak LM-001</div>
+    <div class="order-popup__body text">
+        <p>Зимняя шина Bridgestone Blizzak LM001 разработана с учетом специфических условий так называемых «европейских зим». Данная модель отличается наибольшей эффективностью на мокром и заснеженном покрытии, демонстрируя стабильное сцепление, быстроту и точность в управлении. Помимо того, применение современных технологий и материалов позволило существенно улучшить топливную экономичность, акустический комфорт. И, как и у других покрышек японского бренда, к плюсам данной модели следует отнести «фирменную» устойчивость к сильным ударам и износоустойчивость.</p>
+        <p>Зимняя шина Bridgestone Blizzak LM001 разработана с учетом специфических условий так называемых «европейских зим». Данная модель отличается наибольшей эффективностью на мокром и заснеженном покрытии, демонстрируя стабильное сцепление, быстроту и точность в управлении. Помимо того, применение современных технологий и материалов позволило существенно улучшить топливную экономичность, акустический комфорт. И, как и у других покрышек японского бренда, к плюсам данной модели следует отнести «фирменную» устойчивость к сильным ударам и износоустойчивость.</p>
+    </div>
+</div>
+<div class="popup popup_modal order-popup" id="popup-filter-b">
+    <div class="popup__title">Фильтры</div>
+    <div class="order-popup__body">
+        <select class="district">
+            <option value="" disabled>Не выбран</option>
+            <option value="Адмиралтейский">Адмиралтейский</option>
+            <option value="Василеостровский">Василеостровский</option>
+            <option value="Выборгский">Выборгский</option>
+            <option value="Калининский">Калининский</option>
+            <option value="Кировский">Кировский</option>
+            <option value="Колпинский">Колпинский</option>
+            <option value="Колпинский">Колпинский</option>
+            <option value="Колпинский">Колпинский</option>
+            <option value="Колпинский">Колпинский</option>
+        </select>
+        <select class="metro">
+            <option value="" disabled>Станция метро</option>
+            <option value="Автово" data-icon="metro_01.svg">Автово</option>
+            <option value="Адмиралтейская" data-icon="metro_02.svg">Адмиралтейская</option>
+            <option value="Академическая" data-icon="metro_01.svg">Академическая</option>
+            <option value="Балтийская" data-icon="metro_01.svg">Балтийская</option>
+            <option value="Бухарестская" data-icon="metro_02.svg">Бухарестская</option>
+            <option value="Василеостровская" data-icon="metro_03.svg">Василеостровская</option>
+            <option value="Автово" data-icon="metro_01.svg">Автово</option>
+        </select>
+    </div>
+    <div class="order-popup__bottom flex je">
+        <button type="button" class="order-popup__back btn">Сбросить фильтры</button>
+        <button type="button" class="order-popup__send btn btn-primary">Применить</button>
+    </div>
+</div>
+<div class="popup popup_modal season-p" id="season-p">
+    <div class="popup__title">Выберите сезон</div>
+    <div class="season-p__desc">Шины 235/35 R16</div>
+    <div class="season-p__body">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="season-p-1" />
+            <label for="season-p-1">Лето</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="season-p-2" />
+            <label for="season-p-2">Всесезонные</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="season-p-3" />
+            <label for="season-p-3">Зима (шипованные)</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="season-p-4" />
+            <label for="season-p-4">Зима (нешипованные)</label>
+        </div>
+    </div>
+    <div class="season-p__bottom">
+        <button type="button" class="btn btn-primary">Применить</button>
+    </div>
+</div>
+<a id="compare" href="#" class="compare-panel flex-cc">
+    <span></span>
+</a>
+<div id="art" class="compare-panel flex-cc">
+    <span>Артикул скопирован</span>
+</div>

@@ -1,0 +1,74 @@
+.faq {
+   margin: 32px 0px;
+   border: 1px solid var(--outline-grey);
+   border-radius: 20px;
+   padding: 40px;
+   background: #fff;
+   @include sm {
+      border-radius: 8px;
+      padding: 20px;
+   }
+
+   p {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 140%;
+   }
+}
+
+.form-faq {
+   margin-top: 20px;
+   // .form-faq__wrap
+
+   &__wrap {
+      gap: 20px;
+      & > div {
+         flex: 1;
+      }
+      @include sm {
+         flex-direction: column;
+      }
+   }
+
+   // .form-faq__contact
+
+   &__contact {
+      gap: 20px;
+   }
+
+   // .form-faq__mes
+
+   &__mes {
+      .input-box textarea.input {
+         height: 150px;
+         @include lg {
+            height: 138px;
+         }
+         @include sm {
+            height: 284px;
+         }
+      }
+   }
+
+   // .form-faq__control
+
+   &__control {
+      margin-top: 20px;
+      .check-box {
+         label {
+            align-items: center;
+            p {
+               margin: 0;
+            }
+         }
+      }
+      .btn {
+         margin-top: 20px;
+         max-width: 156px;
+         height: 50px;
+         @include sm {
+            max-width: 100%;
+         }
+      }
+   }
+}

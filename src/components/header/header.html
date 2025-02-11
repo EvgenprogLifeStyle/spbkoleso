@@ -1,0 +1,380 @@
+<header class="header">
+    <div class="hp-picks">
+        75 пунктов выдачи с шиномонтажом в СПб<span> <img src="@img/icons/arr-white.png" alt="arr-white_icons" /></span>
+    </div>
+    <div class="container">
+        <div class="header__body flex">
+            <a href="#" class="header__logo">
+                <div><img src="@img/all/logo-black.svg" alt="logo-icon" /></div>
+                <p class="center">Магазин шин и дисков в Санкт-Петербурге</p>
+            </a>
+            <div class="header__control">
+                <div class="header__top flex sb">
+                    <div class="location flex cv" data-da=".burger__location,1023">
+                        <div class="location__icon">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#location"></use>
+                            </svg>
+                        </div>
+                        <div class="location__text">Санкт-Петербург<span>72 пункта выдачи с шиномонтажом</span></div>
+                    </div>
+                    <div class="lk-header flex cv" data-da=".burger__other,1023">
+                        <a href="#" class="lk-header__icon lk-header__icon_favorite link">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                            </svg>
+                            <span>Избранное</span>
+                        </a>
+                        <!-- <a href="#" class="lk-header__icon lk-header__icon_favorite link active">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                            </svg>
+                             <span>Избранное</span>
+                        </a> -->
+                        <div class="lk-header__wrap">
+                            <div class="lk-header__link link flex cv">
+                                <span class="lk-header__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="@img/sprite.svg#user"></use>
+                                    </svg>
+                                </span>
+                                Личный кабинет
+                            </div>
+                            <!-- <div class="lk-header__auth flex cv">
+                                <a href="#" class="lk-header__link link flex cv">
+                                    <span class="lk-header__icon">
+                                        <svg class="icon">
+                                            <use xlink:href="@img/sprite.svg#user"></use>
+                                        </svg>
+                                    </span>
+                                    Антон В.
+                                </a>
+                                <a href="#" class="lk-header__btn"> Выйти </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="header__center flex">
+                    <form class="search-head">
+                        <input type="text" class="search-head__input input" name="s" placeholder="Поиск по названию или артикулу" />
+                        <div class="search-head__clear">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#clear"></use>
+                            </svg>
+                        </div>
+                        <button class="search-head__btn flex-cc">
+                            <svg class="icon">
+                                <use xlink:href="@img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <a href="#" rel="nofollow" class="rating-yandex">
+                        <div class="rating-yandex__wrap _rating flex" data-value="4.9">
+                            <div class="rating-yandex__logo">
+                                <img src="@img/icons/yandex.svg" alt="yandex_icon" />
+                            </div>
+                            <div class="rating-yandex__num _rating_num">4,9</div>
+                            <div class="rating-yandex__rating">
+                                <div><img src="@img/icons/rating-default.svg" class="rating-yandex__img" alt="rating_default_icon" /></div>
+                                <div class="_rating_value"><img src="@img/icons/rating.svg" class="rating-yandex__img" alt="rating_icon" /></div>
+                            </div>
+                        </div>
+                        <div class="rating-yandex__text">Рейтинг организации в Яндексе</div>
+                    </a>
+                    <div class="fb-head" data-da=".burger__contact,1023,0">
+                        <div class="fb-head__phone flex cv">
+                            <div class="fb-head__icon">
+                                <svg class="icon">
+                                    <use xlink:href="@img/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
+                            8 (812) 703 03 73
+                            <div class="fb-head__arr flex-cc">
+                                <svg class="icon">
+                                    <use xlink:href="@img/sprite.svg#arr"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="fb-head__time flex cv">
+                            <div class="fb-head__icon job">
+                                <svg class="icon">
+                                    <use xlink:href="@img/sprite.svg#clock"></use>
+                                </svg>
+                            </div>
+                            09:00 – 22:00
+                        </div>
+                        <div class="fb-head__popup">
+                            <div class="popup">
+                                <div class="popup__title">Перезвоните мне</div>
+                                <form class="popup__form" data-parsley-validate>
+                                    <div class="input-box">
+                                        <label>Имя<span>*</span></label>
+                                        <input type="text" class="input _text" maxlength="64" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" />
+                                        <div class="error">
+                                            <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                            <div class="error__text">Необходимое поле</div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label>Телефон<span>*</span></label>
+                                        <input type="tel" class="input phone" placeholder="+7 (___) ___ __ __" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" />
+                                        <div class="error">
+                                            <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                            <div class="error__text">Неверный формат</div>
+                                        </div>
+                                    </div>
+                                    <button class="popup__btn btn btn-primary">Отправить</button>
+                                    <div class="popup__polit">
+                                        Нажимая на данную кнопку вы даёте согласие на
+                                        <a href="#" target="_blank" rel="nofollow">обработку персональных данных</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="head-basket flex cv">
+                        <div class="head-basket__icon">
+                            <div class="head-basket__img flex-cc">
+                                <svg class="icon">
+                                    <use xlink:href="@img/sprite.svg#basket"></use>
+                                </svg>
+                            </div>
+                            <div class="head-basket__count flex-cc">0</div>
+                        </div>
+                        <div class="head-basket__text">Корзина</div>
+                    </a>
+                </div>
+            </div>
+            <div class="hp-control">
+                <button class="hp-control__item">
+                    <svg class="icon">
+                        <use xlink:href="@img/sprite.svg#phone"></use>
+                    </svg>
+                </button>
+                <a href="#" class="hp-control__item">
+                    <svg class="icon">
+                        <use xlink:href="@img/sprite.svg#user"></use>
+                    </svg>
+                </a>
+                <a href="#" class="hp-control__item">
+                    <svg class="icon">
+                        <use xlink:href="@img/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="menu-head flex sb" data-da=".burger__catalog,1023">
+            <div class="menu-head__item">
+                <div class="menu-head__name">
+                    <a href="#">Шины</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul>
+                            <li>
+                                <a href="#">Автомобильные шины</a>
+                                <ul>
+                                    <li><a href="#">Зимние шины</a></li>
+                                    <li><a href="#">Летние шины</a></li>
+                                    <li><a href="#">Всесезонные шины</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Грузовые шины</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item menu-head__item_center">
+                <div class="menu-head__name">
+                    <a href="#">Диски</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul>
+                            <li>
+                                <a href="#">Автомобильные диски</a>
+                                <ul>
+                                    <li><a href="#">Литые диски</a></li>
+                                    <li><a href="#">Штампованные диски</a></li>
+                                    <li><a href="#">Кованные диски</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item menu-head__item_center">
+                <div class="menu-head__name">
+                    <a href="#">Сопутствующие товары</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul class="col2">
+                            <li>
+                                <a href="#">Крепеж</a>
+                                <ul>
+                                    <li><a href="#">Болты</a></li>
+                                    <li><a href="#">Гайки</a></li>
+                                    <li><a href="#">Секретки</a></li>
+                                    <li><a href="#">Кольца</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Масла</a>
+                                <ul>
+                                    <li><a href="#">Автомасла</a></li>
+                                    <li><a href="#">Мотомасла</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item">
+                <div class="menu-head__name">
+                    <a href="#">Мотошины</a>
+                </div>
+            </div>
+            <div class="menu-head__item menu-head__item_center">
+                <div class="menu-head__name">
+                    <a href="#">Шиномонтаж</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul>
+                            <li>
+                                <a href="#">Стационарный шиномонтаж</a>
+                            </li>
+                            <li>
+                                <a href="#">Мобильный шиномонтаж</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item menu-head__item_center">
+                <div class="menu-head__name">
+                    <a href="#">Услуги</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul>
+                            <li>
+                                <a href="#">Хранение</a>
+                            </li>
+                            <li>
+                                <a href="#">Правка, ремонт дисков</a>
+                            </li>
+                            <li>
+                                <a href="#">Покраска дисков</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка по Санкт-Петербургу</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка по России</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item menu-head__item_center">
+                <div class="menu-head__name">
+                    <a href="#">Покупателям</a>
+                    <div class="menu-head__btn">
+                        <svg class="icon">
+                            <use xlink:href="@img/sprite.svg#arr"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-head__overlay">
+                    <div class="menu-head__list">
+                        <ul>
+                            <li>
+                                <a href="#">Проверить статус заказа</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Информация о нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Почему именно мы</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантии, возврат, обмен</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-head__item">
+                <div class="menu-head__name">
+                    <a href="#">Акции</a>
+                </div>
+            </div>
+            <div class="menu-head__item">
+                <div class="menu-head__name">
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="burger">
+    <button class="burger__close _close">
+        <svg class="icon">
+            <use xlink:href="@img/sprite.svg#clear"></use>
+        </svg>
+    </button>
+    <div class="burger__location"></div>
+    <div class="burger__catalog"></div>
+    <div class="burger__other">
+        <a href="#" class="burger__search">
+            <span class="burger__icon">
+                <svg class="icon">
+                    <use xlink:href="@img/sprite.svg#search"></use>
+                </svg> </span
+            >Поиск
+        </a>
+    </div>
+    <div class="burger__contact">
+        <div class="burger__adres flex">
+            <span class="burger__icon">
+                <svg class="icon">
+                    <use xlink:href="@img/sprite.svg#location"></use>
+                </svg>
+            </span>
+            Санкт-Петербург, <br />Октябрьская наб. д. 104 к. 13
+        </div>
+        <button class="btn btn-primary openFeedback">Заказать обратный звонок</button>
+    </div>
+</div>

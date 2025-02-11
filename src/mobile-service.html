@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Мобильный шиномонтаж" })
+    <body>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" type="text/javascript"></script>
+
+        <input type="checkbox" name="" id="maketbtn" />
+        <div class="maket">
+            <img src="@img/hlam/ss.png" class="xl" />
+            <img src="@img/hlam/ss_phone.png" class="sm" />
+        </div>
+
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Мобильный шиномонтаж</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Мобильный выездной шиномонтаж в Санкт-Петербурге</h1>
+                    </div>
+                </div>
+                <div class="ms">
+                    <div class="container">
+                        <div class="map-ms flex sb">
+                            <div class="map-ms__content flex dc">
+                                <a href="tel:+78127030373" class="map-ms__phone">+7 (812) 703-03-73</a>
+                                <h3 class="title">Ежедневно с 10:00 до 22:00</h3>
+                                <div class="map-ms__bottom text">
+                                    <ul>
+                                        <li>Минимальная стоимость выезда мастера: <span>2500 рублей.</span></li>
+                                        <li>Стоимость выезда за пределы схемы: <span>40 руб/км.</span></li>
+                                    </ul>
+                                    <p>Итоговую цену определяет мастер шиномонтажа, потому как в процессе оказания услуги могут потребоваться дополнительные работы.</p>
+                                </div>
+                            </div>
+                            <div class="map-ms__map" id="map"></div>
+                            <script>
+                                ymaps.ready(init);
+
+                                function init() {
+                                    var myMap = new ymaps.Map(
+                                            "map",
+                                            {
+                                                center: [59.938784, 30.314997],
+                                                zoom: 10
+                                            },
+                                            {}
+                                        ),
+                                        objectManager = new ymaps.ObjectManager({
+                                            clusterize: true,
+                                            gridSize: 32,
+                                            clusterDisableClickZoom: true
+                                        });
+
+                                    objectManager.objects.options.set("preset", "islands#redDotIcon");
+                                    objectManager.clusters.options.set("preset", "islands#redClusterIcons");
+                                    myMap.geoObjects.add(objectManager);
+
+                                    objectManager.add({
+                                        type: "Feature",
+                                        id: 0,
+                                        geometry: {
+                                            type: "Point",
+                                            coordinates: [59.938784, 30.314997]
+                                        },
+                                        properties: { balloonContentHeader: "<font size=3><b> Метка </b></font>" }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="ms-serve mt_64">
+                            <h3 class="h3">Мы обслуживаем:</h3>
+                            <div class="ms-serve__list flex">
+                                <div class="ms-serve__item">
+                                    <div><img src="@img/icons/auto_01.svg" alt="иконка авто" /></div>
+                                    <p>Легковые авто</p>
+                                </div>
+                                <div class="ms-serve__item">
+                                    <div><img src="@img/icons/auto_02.png" alt="иконка авто" /></div>
+                                    <p>Джипы</p>
+                                </div>
+                                <div class="ms-serve__item">
+                                    <div><img src="@img/icons/auto_03.png" alt="иконка авто" /></div>
+                                    <p>Микроавтобусы</p>
+                                </div>
+                                <div class="ms-serve__item">
+                                    <div><img src="@img/icons/auto_04.svg" alt="иконка авто" /></div>
+                                    <p>Малые грузовики</p>
+                                </div>
+                                <div class="ms-serve__item ms-serve__item_info">
+                                    <div class="flex">
+                                        <div class="flexi-cc"><img src="@img/icons/error_outline.svg" alt="иконка авто" /></div>
+                                        <p>При выездном шиномонтаже можем взять колеса на <a href="#">хранение на теплом складе.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-serve__include mt_64">
+                                <h3 class="h3">Мы обслуживаем:</h3>
+                                <div class="text">
+                                    <ul>
+                                        <li>Снятие и установку колёс</li>
+                                        <li>Демонтаж и монтаж шин</li>
+                                        <li>Балансировка на профессиональном оборудовании</li>
+                                        <li>Ремонт шин</li>
+                                        <li>Ремонт дисков</li>
+                                        <li>Дефектация</li>
+                                        <li>Устранение осевого биения</li>
+                                        <li>Оптимизация шин</li>
+                                        <li>Утилизиция старых покрышек</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-text bg-gray pt_80 mt_80 pb_80 mbm_80">
+                        <div class="container">
+                            <h2 class="subtitle">Преимущества и достоинства услуги выездного монтажа</h2>
+                            <div class="ms-text__wrap text">
+                                <ol>
+                                    <li>
+                                        <h4>Удобство.</h4>
+                                        <p>Нет необходимости стоять в очереди, расходуя драгоценное время. Мастер приедет непосредственно к автомобилю, оперативно проведет работу. Заказ оформляется заблаговременно, включая возможность срочного вызова (в данном случае стоимость увеличится).</p>
+                                    </li>
+                                    <li>
+                                        <h4>Качество.</h4>
+                                        <p>Профессиональный мобильный шиномонтаж подразумевает большой опыт мастера, современное оборудование, профессиональные диагностические и ремонтные инструменты. Работы закрепляются гарантийными обязательствами.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Время работы.</h4>
+                                        <p>Выездной шиномонтаж SPB KOLESO оказывает услуги 7 дней в неделю с 10 до 22 часов.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Вызов в пути.</h4>
+                                        <p>Теперь не нужно вызывать эвакуатор при критичных повреждениях шин. Достаточно позвонить и заказать услугу передвижного шиномонтажа.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Доступные цены.</h4>
+                                        <p>Отсутствие накруток стоимости определяет доступность услуги широкому кругу клиентов.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Восстановление пароля" })
+    <body>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="reg pt_80 pb_80 mbm_80 bg-gray">
+                    <div class="container">
+                        <h1 class="subtitle center">Восстановление пароля</h1>
+                        <form id="recovery-form" action="" class="reg__form">
+                            <div class="input-box">
+                                <label>Телефон<span>*</span></label>
+                                <input type="tel" class="input phone" placeholder="+7 (900) 000-00-00" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" data-parsley-group="reg" />
+                                <div class="error">
+                                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                    <div class="error__text">Неверный формат</div>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label>Email<span>*</span></label>
+                                <input type="email" class="input" maxlength="64" required placeholder="mail@mail.ru" data-parsley-required-message="" data-parsley-type="email" data-parsley-group="reg" />
+                                <div class="error">
+                                    <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                    <div class="error__text">Неверный формат</div>
+                                </div>
+                            </div>
+                            <div id="recaptcha"></div>
+                            <div class="reg__bottom">
+                                <button id="send" class="btn btn-primary g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback="onSubmit" data-action="submit">Продолжить</button>
+                                <a href="#" class="btn btn-outline-red">Регистрация</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            @@include('components/footer/footer.html', {})
+            <script>
+                function onSubmit(token) {
+                    document.getElementById("recaptcha").submit();
+                }
+            </script>
+        </main>
+    </body>
+</html>

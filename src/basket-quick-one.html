@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Корзина" })
+    <body>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" type="text/javascript"></script>
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <h1 class="title mt_0">Корзина</h1>
+                    </div>
+                </div>
+
+                <div class="basket-quick basket-quick_one flex-cc dc">
+                    <div class="basket-quick__icon">
+                        <img src="@img/icons/check_red_big.svg" alt="icon" />
+                    </div>
+                    <div class="basket-quick__title">Ваш быстрый заказ принят!</div>
+                    <div class="basket-quick__text">Оператор скоро свяжется с Вами для подтверждения заказа</div>
+                </div>
+                @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+            </div>
+            @@include('components/footer/footer.html', {})
+            <script src="./js/libs/nouislider.min.js"></script>
+            <script src="./js/libs/wNumb.min.js"></script>
+        </main>
+    </body>
+</html>

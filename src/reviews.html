@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Отзывы" })
+    <body>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Отзывы</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Отзывы</h1>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="container">
+                        <form id="form-r" class="form-r mt_40">
+                            <div class="form-r__wrap flex">
+                                <div class="form-r__contact">
+                                    <div class="form-r__subtitle">1. Контактные данные</div>
+                                    <div class="input-box">
+                                        <label>Имя<span>*</span></label>
+                                        <input type="text" class="input _text" maxlength="64" placeholder="Иван" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" data-parsley-group="basket" />
+                                        <div class="error">
+                                            <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                            <div class="error__text">Необходимое поле</div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label>Номер заказа<span>*</span></label>
+                                        <input type="number" class="input" placeholder="99999999000000" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" data-parsley-group="basket" />
+                                        <div class="error">
+                                            <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                            <div class="error__text">Неверный формат</div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label>Ваша оценка<span>*</span></label>
+                                        <div class="rating-box">
+                                            <div class="rating-group">
+                                                <input name="fst" value="0" type="radio" disabled />
+                                                <label for="fst-1">
+                                                    <svg>
+                                                        <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                    </svg>
+                                                </label>
+                                                <input name="fst" id="fst-1" value="1" type="radio" />
+
+                                                <label for="fst-2">
+                                                    <svg>
+                                                        <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                    </svg>
+                                                </label>
+                                                <input name="fst" id="fst-2" value="2" type="radio" />
+                                                <!-- по умолчанию 3 -->
+                                                <label for="fst-3">
+                                                    <svg>
+                                                        <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                    </svg>
+                                                </label>
+                                                <input name="fst" id="fst-3" value="3" type="radio" checked />
+                                                <label for="fst-4">
+                                                    <svg>
+                                                        <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                    </svg>
+                                                </label>
+                                                <input name="fst" id="fst-4" value="4" type="radio" />
+                                                <label for="fst-5">
+                                                    <svg>
+                                                        <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                    </svg>
+                                                </label>
+                                                <input name="fst" id="fst-5" value="5" type="radio" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-r__message right">
+                                    <div class="form-r__subtitle left">2. Ваш отзыв</div>
+                                    <div class="input-box">
+                                        <textarea class="input" name="" id="" placeholder="Введите текст"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary">Оставить отзыв</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="reviews-list flex">
+                            <div class="reviews-list__left">
+                                <h2 class="subtitle">Все отзывы:</h2>
+                                <p>* все отзывы проходят фильтрацию модератором</p>
+                            </div>
+                            <div class="reviews-list__content">
+                                <div class="cart-r">
+                                    <div class="cart-r__head flex cv sb">
+                                        <div class="cart-r__name">Владимир</div>
+                                        <div class="cart-r__other flex">
+                                            <div class="cart-r__order">999999000099</div>
+                                            <div>01.11.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-r__body">
+                                        <div class="cart-r__rating flex cv">
+                                            <h4>Оценка</h4>
+                                            <div class="flex">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cart-r__message text">На свой Ниссан нужно было приобрести нормального качества резину. Взял на зиму BRIDGESTONE BLIZZAK. Отличное качество шин. Управляемость нормальная. Сцепление с дорогой хорошее.</div>
+                                    </div>
+                                </div>
+                                <div class="cart-r">
+                                    <div class="cart-r__head flex cv sb">
+                                        <div class="cart-r__name">Александр</div>
+                                        <div class="cart-r__other flex">
+                                            <div class="cart-r__order">999999000099</div>
+                                            <div>01.11.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-r__body">
+                                        <div class="cart-r__rating flex cv">
+                                            <h4>Оценка</h4>
+                                            <div class="flex">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cart-r__message text">Бриджстоун показали себя наилучшим образом. Автомобиль стал значительно устойчивее на скользких покрытиях, особенно в поворотах и на торможении. Также заметно улучшилась сцепляемость с дорогой, благодаря чему мадиск легко трогается даже по глубокому снегу. В целом, эти диски обеспечивают отличную управляемость и безопасность в сложных зимних условиях.</div>
+                                    </div>
+                                </div>
+                                <div class="cart-r">
+                                    <div class="cart-r__head flex cv sb">
+                                        <div class="cart-r__name">Владимир</div>
+                                        <div class="cart-r__other flex">
+                                            <div class="cart-r__order">999999000099</div>
+                                            <div>01.11.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-r__body">
+                                        <div class="cart-r__rating flex cv">
+                                            <h4>Оценка</h4>
+                                            <div class="flex">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cart-r__message text">На свой Ниссан нужно было приобрести нормального качества резину. Взял на зиму BRIDGESTONE BLIZZAK. Отличное качество шин. Управляемость нормальная. Сцепление с дорогой хорошее.</div>
+                                    </div>
+                                </div>
+                                <div class="cart-r">
+                                    <div class="cart-r__head flex cv sb">
+                                        <div class="cart-r__name">Валерий</div>
+                                        <div class="cart-r__other flex">
+                                            <div class="cart-r__order">999999000099</div>
+                                            <div>01.11.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-r__body">
+                                        <div class="cart-r__rating flex cv">
+                                            <h4>Оценка</h4>
+                                            <div class="flex">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cart-r__message text">
+                                            <p>Я очень доволен выбором зимних шин Bridgestone Blizzak LM-001 для моего автомобиля Audi A4 с типоразмером 225/45 R18. Эти диски подошли идеально, обеспечивая мне комфорт и безопасность на заснеженных и обледенелых дорогах.</p>
+                                            <p>Первое, что я заметил, это отличное сцепление шин с дорожным покрытием. Благодаря уникальной резиновой смеси и инновационному протектору, диски Bridgestone Blizzak LM-001 обеспечивают надежное сцепление во время торможения и ускорения. Я всегда чувствую себя уверенно на ледяных поверхностях и не беспокоюсь о потере контроля над автомобилем.</p>
+                                            <p>Кроме того, эти диски отличаются высокой маневренностью. Благодаря уникальному дизайну протектора, Bridgestone Blizzak LM-001 позволяют мне легко и точно управлять автомобилем даже на скользких поворотах. Они также обеспечивают отличную стабильность и плавность хода, что делает мои поездки на зимних дорогах максимально комфортными.</p>
+                                            <p>В целом, я очень доволен зимними дискми Bridgestone Blizzak LM-001. Они идеально подошли для моего Audi A4, обеспечивая надежное сцепление, высокую маневренность и комфортное вождение. Я чувствую себя уверенно и безопасно на заснеженных дорогах и это благодаря этим отличным дискм. Рекомендую их всем, кто ищет надежные и высококачественные зимние диски.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-r">
+                                    <div class="cart-r__head flex cv sb">
+                                        <div class="cart-r__name">Александр</div>
+                                        <div class="cart-r__other flex">
+                                            <div class="cart-r__order">999999000099</div>
+                                            <div>01.11.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-r__body">
+                                        <div class="cart-r__rating flex cv">
+                                            <h4>Оценка</h4>
+                                            <div class="flex">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#star-rating"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cart-r__message text">Бриджстоун показали себя наилучшим образом. Автомобиль стал значительно устойчивее на скользких покрытиях, особенно в поворотах и на торможении. Также заметно улучшилась сцепляемость с дорогой, благодаря чему мадиск легко трогается даже по глубокому снегу. В целом, эти диски обеспечивают отличную управляемость и безопасность в сложных зимних условиях.</div>
+                                    </div>
+                                </div>
+                                @@include('components/pagin/pagin.html', {})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

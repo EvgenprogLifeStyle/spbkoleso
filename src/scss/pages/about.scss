@@ -1,0 +1,149 @@
+.intro-about {
+  gap: 20px;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  // .intro-about__content
+  &__content {
+    flex: 1;
+
+    p {
+      font-size: 16px;
+      line-height: 140%;
+
+      &:nth-child(1) {
+        margin-bottom: 32px;
+
+        @include sm {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  // .intro-about__img
+  &__img {
+    width: 40.8%;
+    flex-shrink: 0;
+    aspect-ratio: 520/264;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include sm {
+      width: 100%;
+      aspect-ratio: 320/380;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.avd-a {
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  // .avd-a__list
+  &__list {
+    gap: 20px;
+
+    @include md {
+      gap: 12px;
+    }
+  }
+
+  // .avd-a__item
+  &__item {
+    flex: 0 0 calc(50% - 10px);
+    padding: 20px;
+    min-height: 154px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px 0 rgba(40, 40, 40, 0.04);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+
+    @include md {
+      //   flex: 0 0 100%;
+      min-height: 120px;
+    }
+
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+
+  // .avd-a__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+
+    @include md {
+      max-width: 180px;
+      justify-content: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    @include sm {
+      justify-content: start;
+    }
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('../img/icons/check_red_border_black.svg') center/contain no-repeat;
+
+      @include md {
+        display: none;
+      }
+    }
+
+    p {
+      margin-top: auto;
+      font-size: 20px;
+      line-height: 140%;
+
+      @include md {
+        margin-top: 0;
+        font-size: 14px;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  // .avd-a__img
+  &__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    img {
+      @include md {
+        max-height: 100px;
+      }
+
+      @include sm {
+        max-height: 120px;
+      }
+    }
+  }
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Шиномонтаж" })
+    <body>
+        <input type="checkbox" name="" id="maketbtn" />
+        <div class="maket">
+            <img src="@img/hlam/ss.png" class="xl" />
+            <img src="@img/hlam/ss_phone.png" class="sm" />
+        </div>
+
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Шиномонтаж</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Качественный шиномонтаж в Санкт-Петербурге</h1>
+                    </div>
+                </div>
+                <div class="tf">
+                    <div class="container">
+                        <a href="#" class="tf__banner mt_24">
+                            <img src="@img/all/banner_fitting.png" alt="картинка баннера" class="xl" />
+                            <img src="@img/all/banner_fitting_phone.png" alt="картинка баннера" class="sm" />
+                        </a>
+                        <div class="calc-tf mt_64 flex">
+                            <div class="calc-tf__wrap">
+                                <h2 class="subtitle">Рассчитайте стоимость шиномонтажа</h2>
+                                <form action="" class="form-tf as">
+                                    <div class="form-tf__row flex">
+                                        <div class="box-form">
+                                            <label class="box-form__label">Ширина</label>
+                                            <div class="select-box">
+                                                <select class="select-custom">
+                                                    <option value="Все" checked>Все</option>
+                                                    <option value="135">135</option>
+                                                    <option value="145">145</option>
+                                                    <option value="155">155</option>
+                                                    <option value="165">165</option>
+                                                    <option value="175">175</option>
+                                                    <option value="185" disabled>185</option>
+                                                    <option value="195">195</option>
+                                                    <option value="200">200</option>
+                                                    <option value="205">205</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="box-form">
+                                            <label class="box-form__label">Высота</label>
+                                            <div class="select-box">
+                                                <select class="select-custom">
+                                                    <option value="Все" checked>Все</option>
+                                                    <option value="45">45</option>
+                                                    <option value="50">50</option>
+                                                    <option value="55">55</option>
+                                                    <option value="60">60</option>
+                                                    <option value="65">65</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="box-form">
+                                            <label class="box-form__label">Диаметр</label>
+                                            <div class="select-box">
+                                                <select class="select-custom">
+                                                    <option value="Все" checked>Все</option>
+                                                    <option value="Диаметр 1">Диаметр 1</option>
+                                                    <option value="Диаметр 2">Диаметр 2</option>
+                                                    <option value="Диаметр 3">Диаметр 3</option>
+                                                    <option value="Диаметр 4">Диаметр 4</option>
+                                                    <option value="Диаметр 5">Диаметр 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-tf__bottom flex">
+                                        <button type="button" class="btn btn-primary">
+                                            Рассчитать
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#arr-link"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-reset">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#reset"></use>
+                                            </svg>
+                                            Сбросить
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <a href="#" class="form-tf__banner">
+                                <img src="@img/all/banner_tf_form.png" alt="картинка баннера" />
+                            </a>
+                        </div>
+                        <div class="serv-tf flex active">
+                            <ul class="serv-tf__list">
+                                <li data-id="0" class="active">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Полный комплекс (снятие, установка, демонтаж, монтаж, балансировка)</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="1">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Снятие, установка, монтаж, балансировка,установка вентеля</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="2">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Монтаж, балансировка (с установкой вентиля)</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="3">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Снятие, установка</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="4">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Демонтаж</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="5">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Монтаж</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="6">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Балансировка</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="7">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Удаление грязи</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="8">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Замена вентиля</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                                <li data-id="9">
+                                    <div class="serv-tf__section flex sb">
+                                        <div class="serv-tf__name">Установка датчика давления</div>
+                                        <div class="serv-tf__price flex sb"><span class="serv-tf_c">4 шт.</span><span class="serv-tf_p">3 760 ₽</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="serv-tf__items">
+                                <div class="serv-tf__item active text" data-id="0">
+                                    <p>В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="1">
+                                    <p>1В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="2">
+                                    <p>2В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="3">
+                                    <p>3В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="4">
+                                    <p>4В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="5">
+                                    <p>5В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="6">
+                                    <p>6В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="7">
+                                    <p>7В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="8">
+                                    <p>8В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                                <div class="serv-tf__item text" data-id="9">
+                                    <p>9В стоимость включены стандартные вентили, балансировочные грузы и пакеты для колес. Фактическая цена определяется мастером шиномонтажа, т.к. в процессе обслуживания может возникнуть необходимость проведения дополнительных работ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-tf flex cv mt_64">
+                            <div class="feed-tf__icon">
+                                <img src="img/product/services/01.png" alt="картинка обратной связи" />
+                            </div>
+                            <div class="feed-tf__content">
+                                <h2 class="subtitle">Запишитесь на&nbsp;шиномонтаж онлайн</h2>
+                                <div class="feed-tf__wrap flex fw cv">
+                                    <button class="btn btn-primary">
+                                        Онлайн-запись
+                                        <img src="@img/icons/calendar-white.svg" alt="иконка календаря" />
+                                    </button>
+                                    <div class="feed-tf__text">или по тел. <a href="tel:88127030373" class="link">8 (812) 703 03 73</a> доб. 17</div>
+                                </div>
+                            </div>
+                            <div class="feed-tf__img">
+                                <img src="@img/all/banner_tf_feed.png" alt="картинка обратной связи" />
+                            </div>
+                        </div>
+
+                        <div class="ftf active flex as">
+                            <div class="cald-tf">
+                                <div class="cald-tf__date">
+                                    <div class="cald-tf__head flex cv sb">
+                                        <div class="cald-tf__subtitle">Желаемая дата</div>
+                                        <div class="cald-tf__over flex cv">
+                                            <button type="button" class="cald-tf__arr cald-tf__arr_prev disabled">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#arr-link"></use>
+                                                </svg>
+                                            </button>
+                                            <div id="month" class="cald-tf__month"></div>
+                                            <button type="button" class="cald-tf__arr cald-tf__arr_next">
+                                                <svg>
+                                                    <use xlink:href="@img/sprite.svg#arr-link"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div id="days" class="cald-tf__body flex fw"></div>
+                                </div>
+                                <div class="cald-tf__time">
+                                    <div class="cald-tf__subtitle">Желаемое время</div>
+                                    <div class="time-ctf flex fw">
+                                        <div class="time-ctf__item">10:00</div>
+                                        <div class="time-ctf__item">10:30</div>
+                                        <div class="time-ctf__item">11:00</div>
+                                        <div class="time-ctf__item active">11:30</div>
+                                        <div class="time-ctf__item">12:00</div>
+                                        <div class="time-ctf__item">12:30</div>
+                                        <div class="time-ctf__item">13:00</div>
+                                        <div class="time-ctf__item">13:30</div>
+                                        <div class="time-ctf__item">14:00</div>
+                                        <div class="time-ctf__item">14:30</div>
+                                        <div class="time-ctf__item disabled">15:00</div>
+                                        <div class="time-ctf__item">15:30</div>
+                                        <div class="time-ctf__item">16:00</div>
+                                        <div class="time-ctf__item">16:30</div>
+                                        <div class="time-ctf__item">17:00</div>
+                                        <div class="time-ctf__item">17:30</div>
+                                        <div class="time-ctf__item">18:00</div>
+                                        <div class="time-ctf__item">18:30</div>
+                                        <div class="time-ctf__item">19:00</div>
+                                        <div class="time-ctf__item">19:30</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-tft">
+                                <div class="cart-tft__label flexi-cc">Выбранная дата и время:</div>
+                                <div class="cart-tft__subtitle">4 янв. в 11:30</div>
+                                <div class="adr-tft flex">
+                                    <div class="adr-tft__item">
+                                        <h4>
+                                            <span><img src="@img/icons/metro_04.svg" alt="иконка метро" /></span>Пролетарская, Октябрьская наб., д. 104, к. 13
+                                        </h4>
+                                        <p><span>8 (812) 703 03 73 доб. 17</span></p>
+                                    </div>
+                                    <div class="adr-tft__item">
+                                        <p>Режим работы:</p>
+                                        <p>Пн-Пт: 10:00 - 22:00</p>
+                                        <p>Сб: 10:00 - 20:00</p>
+                                        <p>Вс: 10:00 - 18:00</p>
+                                    </div>
+                                </div>
+                                <form action="" id="form-tft" class="form-tft">
+                                    <div class="form-tft__row flex">
+                                        <div class="input-box">
+                                            <label>Имя<span>*</span></label>
+                                            <input type="text" class="input _text" maxlength="64" placeholder="Иван" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" data-parsley-group="basket" />
+                                            <div class="error">
+                                                <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                                <div class="error__text">Необходимое поле</div>
+                                            </div>
+                                        </div>
+                                        <div class="input-box">
+                                            <label>Телефон<span>*</span></label>
+                                            <input type="tel" class="input phone" placeholder="+7 (900) 000-00-00" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" data-parsley-group="basket" />
+                                            <div class="error">
+                                                <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                                <div class="error__text">Неверный формат</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-tft__row flex">
+                                        <div class="input-box">
+                                            <label>Гос. номер</label>
+                                            <input type="text" class="input" maxlength="64" placeholder="х999хх178" />
+                                        </div>
+                                        <div class="input-box">
+                                            <label>Комментарий</label>
+                                            <textarea class="input" name="" id="" placeholder="Введите текст"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Записаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-tf bg-gray pt_80 mt_80 pb_80 mbm_80">
+                        <div class="container">
+                            <div class="rec-tf__wrap">
+                                <h2 class="rec-tf__subtitle">Бесплатный шиномонтаж на товары участвующие в акции «шиномонтаж в подарок» осуществляется по адресу:</h2>
+                                <div class="rec-tf__list flex mt_24">
+                                    <div class="rec-tf__item">
+                                        <h3><img src="@img/icons/metro_03.svg" alt="иконка метро" />Пролетарская, <nobr>Октябрьская наб., д. 104, к. 13</nobr></h3>
+                                        <p>
+                                            <span><a href="tel:88127030373" class="link">8 (812) 703 03 73</a> доб. 17</span>
+                                        </p>
+                                    </div>
+                                    <div class="rec-tf__item">
+                                        <p>Режим работы:</p>
+                                        <p>Пн-Пт: 10:00 - 22:00</p>
+                                        <p>Сб: 10:00 - 20:00</p>
+                                        <p>Вс: 10:00 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

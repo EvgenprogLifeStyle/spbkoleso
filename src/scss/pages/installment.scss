@@ -1,0 +1,256 @@
+.head-inst {
+  position: relative;
+
+  @include sm {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  // .head-inst__list
+  &__list {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 14px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      &::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background: url('../img/icons/check_red_border_black.svg') center/cover no-repeat;
+      }
+    }
+  }
+
+  // .head-inst__img
+  &__img {
+    position: absolute;
+    width: 528px;
+    top: -40px;
+    right: 0;
+
+    @include md {
+      width: 428px;
+      right: -20px;
+    }
+
+    @include sm {
+      aspect-ratio: 360 / 186;
+      position: static;
+      width: calc(100% + 20px);
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+
+      @include sm {
+        transform: translateX(20px);
+      }
+    }
+  }
+}
+
+//========================================================================================================================================================
+.list-inst {
+  margin-top: 60px;
+
+  .subtitle {}
+
+  // .list-inst__wrap
+  &__wrap {
+    gap: 20px;
+  }
+
+
+  // .list-inst__item
+  &__item {
+    position: relative;
+    box-shadow: 4px 4px 8px 0 rgba(40, 40, 40, 0.04);
+    width: calc(25% - 15px);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include md {
+      width: calc(50% - 10px);
+    }
+
+    @include sm {
+      width: 100%;
+      height: 180px;
+    }
+  }
+
+
+  // .list-inst__left
+  &__left {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+  }
+
+
+
+  // .list-inst__num
+  &__num {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #e43a2d;
+  }
+
+  // .list-inst__img
+  &__img {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @include sm {
+      height: 100%;
+      width: auto;
+    }
+
+    img {
+      max-width: 100%;
+
+      @include sm {
+        max-height: 100%;
+      }
+    }
+  }
+
+  // .list-inst__name
+  &__name {
+    margin-top: auto;
+    line-height: 140%;
+  }
+}
+
+//========================================================================================================================================================
+
+.drop-inst {
+  .subtitle {
+    @include sm {
+      margin-bottom: 12px;
+    }
+  }
+
+  // .drop-inst__items
+  &__items {
+    max-width: 844px;
+  }
+
+  // .drop-inst__item
+  &__item {
+    &.active {
+      .drop-inst__head {
+        span {
+          &::before {
+            transform: translate(-50%, -30%);
+            opacity: 0;
+          }
+        }
+      }
+
+      .drop-inst__body {
+        height: auto;
+        opacity: 1;
+        padding-top: 16px;
+
+        @include sm {
+          padding-top: 8px;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @include sm {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  // .drop-inst__head
+  &__head {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    cursor: pointer;
+    gap: 20px;
+
+    span {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      border: 2px solid #292D32;
+      border-radius: 50%;
+      position: relative;
+
+      @include sm {
+        width: 24px;
+        height: 24px;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: var(--interface-red);
+        border-radius: 2px;
+        transition: all 0.3s ease 0s;
+        transform: translate(-50%, -50%);
+
+      }
+
+      &::after {
+        width: 10px;
+        height: 2px;
+      }
+
+      &::before {
+        height: 10px;
+        width: 2px;
+
+      }
+    }
+  }
+
+  // .drop-inst__body
+  &__body {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+
+    &.text {
+      line-height: 140%;
+    }
+  }
+}

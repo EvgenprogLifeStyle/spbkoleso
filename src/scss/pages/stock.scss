@@ -1,0 +1,99 @@
+.stock-h {
+
+  // .stock-h__list
+  &__list {
+    gap: 40px 20px;
+
+    @include md {
+      gap: 20px;
+    }
+  }
+
+  // .stock-h__cart
+  &__cart {
+    width: calc(33.33% - 40px /3);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @include md {
+      width: calc(50% - 10px);
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  // .stock-h__over
+  &__over {
+    @media (any-hover: hover) {
+      &:hover {
+        .stock-h__name {
+          color: var(--interface-red);
+        }
+      }
+    }
+  }
+
+
+  // .stock-h__img
+  &__img {
+    aspect-ratio: 412/128;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+
+    @include sm {
+      aspect-ratio: 320/100;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .stock-h__body
+  &__body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+
+    @include sm {
+      min-height: 94px;
+    }
+  }
+
+  // .stock-h__name
+  &__name {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    transition: all 0.3s ease 0s;
+
+    @include sm {
+      font-size: 16px;
+    }
+  }
+
+  // .stock-h__end
+  &__end {
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #8f8f8f;
+
+    span {
+      color: #e43a2d;
+    }
+  }
+}

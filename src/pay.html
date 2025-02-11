@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Оплата и получение" })
+    <body>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Оплата и получение</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Оплата и получение</h1>
+                    </div>
+                </div>
+                <div class="pay">
+                    <div class="container">
+                        <div class="par-pay flex sb mt_40">
+                            <div class="par-pay__content">
+                                <h2 class="h3">
+                                    Получить товары из нашего интернет-магазина <br />
+                                    Вы можете двумя способами:
+                                </h2>
+                                <div class="par-pay__list">
+                                    <div class="par-pay__item">
+                                        <div class="par-pay__text">
+                                            <h4>Самовывоз из пунктов выдачи</h4>
+                                            <p>более 75 по Санкт-Петербургу <br />и Ленинградской области</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Найти пункт выдачи</a>
+                                    </div>
+                                    <div class="par-pay__item">
+                                        <div class="par-pay__text">
+                                            <h4>Доставка по Санкт-Петербургу и России</h4>
+                                            <p>по Санкт-Петербургу – бесплатно. Отправка в другой город любой транспортной компанией.</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="par-pay__war flex cv">
+                                <span class="flexi-cc"><img src="@img/icons/error_outline.svg" alt="иконка авто" /></span>
+                                Все товары, представленные на сайте нашего интернет магазина, есть в наличии на складе
+                            </div>
+                        </div>
+                        <div class="prod-pay">
+                            <h2 class="h3">Оплатить заказанный товар Вы можете:</h2>
+                            <div class="prod-pay__wrap flex sb">
+                                <div class="prod-pay__desc text">
+                                    <ul>
+                                        <li>Наличными</li>
+                                        <li>Банковской картой</li>
+                                        <li>Банковской картой на сайте (интернет эквайринг)</li>
+                                        <li>Банковским переводом от юридического или физического лица</li>
+                                        <li>Электронными деньгами (Яндекс-Деньги, Web Money)</li>
+                                        <li>Оформить рассрочку (Т-Банк, Долями или Сплит)</li>
+                                    </ul>
+                                </div>
+                                <div class="prod-pay__list flex as">
+                                    <a href="#" target="_blank" class="prod-pay__item prod-pay__item_t">
+                                        <span class="prod-pay__icon"><img src="@img/icons/tbank.png" alt="картинка логотипа" /></span>
+                                        <span class="prod-pay__text">Рассрочка на 4 месяца</span>
+                                        <span class="prod-pay__img">
+                                            <img src="@img/all/pay_01.png" alt="картинка" />
+                                        </span>
+                                    </a>
+                                    <a href="#" target="_blank" class="prod-pay__item prod-pay__item_d">
+                                        <span class="prod-pay__icon"><img src="@img/icons/dol.png" alt="картинка логотипа" /></span>
+                                        <span class="prod-pay__text"
+                                            >Разделить сумму <br />
+                                            на 4 части без <br />
+                                            процентов</span
+                                        >
+                                        <span class="prod-pay__img">
+                                            <img src="@img/all/pay_03.png" alt="картинка" />
+                                        </span>
+                                    </a>
+                                    <a href="#" target="_blank" class="prod-pay__item prod-pay__item_s">
+                                        <span class="prod-pay__icon"><img src="@img/icons/split.png" alt="картинка логотипа" /></span>
+                                        <span class="prod-pay__text"
+                                            >1/4 цены сейчас <br />
+                                            и покупка ваша</span
+                                        >
+                                        <span class="prod-pay__img">
+                                            <img src="@img/all/pay_04.png" alt="картинка" />
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+.form-r {
+
+
+  @include msm {
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.1);
+    padding: 20px;
+  }
+
+  // .form-r__wrap
+  &__wrap {
+    gap: 20px;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    .input-box {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      .input {}
+    }
+  }
+
+  // .form-r__contact
+  &__contact {
+    width: 400px;
+
+    @include md {
+      width: 320px;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  // .form-r__subtitle
+  &__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  // .form-r__message
+  &__message {
+    flex: 1 1 auto;
+
+    textarea.input {
+      height: 168px;
+
+      @include md {
+        height: 158px;
+      }
+
+      @include sm {
+        height: 138px;
+      }
+    }
+
+    .btn {
+      margin-top: 32px;
+      height: 50px;
+      max-width: 400px;
+      font-size: 18px;
+
+      @include sm {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+.rating-box .rating-group {
+  display: flex;
+}
+
+.rating-box input {
+  position: absolute;
+  left: -9999px;
+}
+
+.rating-box label {
+  margin: 0;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.rating-box label svg {
+  height: 38px;
+  width: 38px;
+  fill: #E43A2D;
+  transition: fill 0.3s;
+}
+
+.rating-box input:checked~label svg {
+  fill: #B5B5B5;
+}
+
+.rating-box .rating-group:hover label svg {
+  fill: #E43A2D;
+}
+
+.rating-box .rating-group input:hover~label svg {
+  fill: #B5B5B5;
+}
+
+//========================================================================================================================================================
+.reviews-list {
+  gap: 20px;
+  margin-top: 64px;
+
+  @include md {
+    flex-direction: column;
+  }
+
+  // .reviews-list__left
+  &__left {
+    width: 35%;
+    flex-shrink: 0;
+
+    @include md {
+      width: 100%;
+    }
+
+    .subtitle {
+      margin-bottom: 16px;
+
+      @include sm {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+
+
+  // .reviews-list__content
+  &__content {
+    flex: 1 1 auto;
+
+    .cart-r {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @include sm {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.cart-r {
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  padding: 24px;
+
+  @include sm {
+    padding: 16px;
+  }
+
+  // .cart-r__head
+  &__head {
+    gap: 20px;
+    margin-bottom: 16px;
+
+    @include sm {
+      margin-bottom: 8px;
+    }
+  }
+
+  // .cart-r__name
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+
+    @include sm {
+      font-size: 14px;
+    }
+  }
+
+  // .cart-r__other
+  &__other {
+    gap: 24px;
+    line-height: 140%;
+    color: #8f8f8f;
+
+    @include sm {
+      font-size: 12px;
+    }
+  }
+
+  // .cart-r__order
+  &__order {
+    @include sm {
+      display: none;
+    }
+  }
+
+  // .cart-r__body
+  &__body {}
+
+  // .cart-r__rating
+  &__rating {
+    margin-bottom: 16px;
+    gap: 8px;
+
+    @include sm {
+      margin-bottom: 8px;
+      gap: 6px;
+    }
+
+    h4 {
+      font-weight: 600;
+      line-height: 110%;
+
+      @include sm {
+        font-size: 12px;
+      }
+    }
+
+    div {
+      gap: 1px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--interface-red);
+
+        @include sm {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  // .cart-r__message
+  &__message {
+
+
+    &.text {
+      p {
+        line-height: 140%;
+        font-size: 14px;
+
+        @include sm {
+          font-size: 12px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

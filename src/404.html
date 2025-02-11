@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+   @@include('components/head.html', { "title":"404" })
+   <body>
+      <main class="main">
+         @@include('components/header/header.html', {})
+         <div class="wrapper">
+            <div class="bg-gray">
+               <div class="container">
+                  <div class="not-found flex cv sb">
+                     <div class="not-found__content">
+                        <h1>Страница не найдена</h1>
+                        <p>Попробуйте перейти на главную страницу или воспользоваться ссылками на фильтры подбора ниже</p>
+                        <a href="/" class="btn">На главную</a>
+                     </div>
+                     <div class="not-found__img">
+                        <img src="@img/404.png" alt="Картинка" />
+                     </div>
+                  </div>
+               </div>
+               @@include('components/filter/filter-home.html', {class:"mbm_80"})
+            </div>
+
+            @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+         </div>
+         @@include('components/footer/footer.html', {})
+      </main>
+   </body>
+</html>

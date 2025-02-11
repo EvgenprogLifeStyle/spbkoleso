@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Контакты" })
+
+    <body>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" type="text/javascript"></script>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-db bg-gray">
+                    <div class="container">
+                        <h1 class="title mt_0">Контакты</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="contact">
+                        <div class="head-contact flex sb">
+                            <div class="head-contact__item">
+                                <p>Телефон</p>
+                                <div>
+                                    <a href="tel:88127030373" class="link">8 (812) 703 03 73</a>
+                                </div>
+                            </div>
+                            <div class="head-contact__item">
+                                <p>Email</p>
+                                <div><a href="mailto:mail@spbkoleso.ru" class="link">mail@spbkoleso.ru</a></div>
+                            </div>
+                            <div class="head-contact__item">
+                                <p>Телефон</p>
+                                <div class="head-contact__social flex">
+                                    <a href="#" target="_blank" rel="nofollow"><img src="@img/icons/telegram.svg" alt="иконка telegram" /></a>
+                                    <a href="#" target="_blank" rel="nofollow"><img src="@img/icons/youtube.svg" alt="иконка youtube" /></a>
+                                    <a href="#" target="_blank" rel="nofollow"><img src="@img/icons/whatsapp.svg" alt="иконка whatsapp" /></a>
+                                </div>
+                            </div>
+                            <div class="head-contact__item">
+                                <p>Офис и центральный склад</p>
+                                <div>Санкт-Петербург, Октябрьская наб. д. 104 к. 13</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('components/mapsBlock/mapsBlock.html', {title:'Адреса пунктов выдачи', class:"mt_32 mb_32" }) @@include('components/feedBlock/feedBlock.html', {})
+                <div class="container">
+                    <div class="details mt_32">
+                        <h2 class="subtitle">Реквизиты</h2>
+                        <div class="details__body">
+                            <p>Тут лежат реквизиты</p>
+                        </div>
+                    </div>
+                </div>
+                @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

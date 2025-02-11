@@ -1,0 +1,112 @@
+* {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+   outline: none;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   // outline: none;
+}
+
+a:focus,
+a:active {
+   // outline: none;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   //text-rendering: optimizeLegibility;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+   font-family: $fontFamily;
+   font-size: inherit;
+}
+textarea {
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+button {
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+
+a {
+   color: inherit;
+   font-family: inherit;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+.icon {
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   width: 20px;
+   height: 20px;
+}
+
+input:-webkit-autofill {
+   transition: all 5000s ease-in-out 0s;
+}

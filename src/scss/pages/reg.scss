@@ -1,0 +1,90 @@
+.reg {
+  @include sm {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  .subtitle {
+    @include sm {
+      text-align: left;
+    }
+  }
+
+  // .reg__form
+  &__form {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px;
+
+    @include sm {
+      padding: 40px 20px 68px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      border-radius: 0;
+    }
+
+    .input-box {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      .input {
+        height: 52px;
+      }
+    }
+  }
+
+  // .reg__bottom
+  &__bottom {
+    .btn {
+      height: 50px;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      margin-bottom: 32px;
+      margin-top: 20px;
+
+      @include sm {
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .btn-outline-red {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  // .reg__forgot
+  &__forgot {
+    color: #8f8f8f;
+    height: 44px;
+  }
+
+  // .reg__polit
+  &__polit {
+    font-weight: 500;
+    line-height: 140%;
+    color: #8f8f8f;
+    margin-top: 16px;
+  }
+
+}
+
+#entity-legal-input {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+
+  &.active {
+    opacity: 1;
+    height: max-content;
+  }
+}

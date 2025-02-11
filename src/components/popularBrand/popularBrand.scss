@@ -1,0 +1,32 @@
+.popular-list {
+   // .popular-list__wrap
+   &__wrap {
+      gap: 12px;
+
+      a {
+         width: calc(25% - 9px);
+         font-size: 14px;
+         line-height: 140%;
+         color: var(--interface-red);
+
+         @include sm {
+            width: calc(50% - 6px);
+         }
+      }
+   }
+
+   // .popular-list__btn
+   &__btn {
+      border: 1px solid var(--interface-red);
+      color: var(--interface-red);
+      width: max-content;
+      padding: 0px 15px;
+      margin: 40px 0 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}
+
+.btn {
+}

@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Подбор по авто" })
+    <body>
+        <input type="checkbox" name="" id="maketbtn" />
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-db head-db_model bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Подбор по авто</a></li>
+                                <li><span>Шины и диски для Audi A4'2014 (1.6 TFSI Avant)</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Шины и диски для Audi A4'2014 (1.6 TFSI Avant)</h1>
+                    </div>
+                </div>
+                <div class="tw-s mt_36">
+                    <div class="container">
+                        <div class="tw-s__wrap flex">
+                            <div class="filter-tw">
+                                <div class="filter-tw__subtitle h4">Подбор по автомобилю</div>
+                                <div class="filter-auto">
+                                    <div class="box-form box-form_auto">
+                                        <label class="box-form__label">1. Марка</label>
+                                        <div class="select-box">
+                                            <div class="select-box">
+                                                <select class="select-custom" readonly>
+                                                    <option value="—" checked>—</option>
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="BMW">BMW</option>
+                                                    <option value="Mazda">Mazda</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-form box-form_auto disabled" id="step1">
+                                        <label class="box-form__label">2. Модель</label>
+                                        <div class="select-box">
+                                            <select class="select-custom">
+                                                <option value="—" checked>—</option>
+                                                <option value="45">45</option>
+                                                <option value="50">50</option>
+                                                <option value="55">55</option>
+                                                <option value="60">60</option>
+                                                <option value="65">65</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="box-form box-form_auto disabled" id="step2">
+                                        <label class="box-form__label">3. Год выпуска</label>
+                                        <div class="select-box">
+                                            <select class="select-custom">
+                                                <option value="—" checked>—</option>
+                                                <option value="135">135</option>
+                                                <option value="145">145</option>
+                                                <option value="155">155</option>
+                                                <option value="165">165</option>
+                                                <option value="175">175</option>
+                                                <option value="185" disabled>185</option>
+                                                <option value="195">195</option>
+                                                <option value="200">200</option>
+                                                <option value="205">205</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="box-form box-form_auto disabled" id="step3">
+                                        <label class="box-form__label">4. Модификация</label>
+                                        <div class="select-box">
+                                            <select class="select-custom">
+                                                <option value="—" checked>—</option>
+                                                <option value="Производитель шин 1">Производитель шин 1</option>
+                                                <option value="Производитель шин 2">Производитель шин 2</option>
+                                                <option value="Производитель шин 3">Производитель шин 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="filter-auto__bottom">
+                                        <button class="filter-auto__send btn btn-primary filter-auto_send" disabled>Поcмотреть размеры</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-tw flex sb">
+                                <div class="info-tw__list flex">
+                                    <div class="info-tw__item">
+                                        <h4 class="h4">Шины</h4>
+                                        <p class="p">Оригинальные размеры</p>
+                                        <ul>
+                                            <li><a href="#">205/65 R16</a></li>
+                                        </ul>
+                                        <p class="p">
+                                            Альтернативные размеры <br />
+                                            (варианты замены)
+                                        </p>
+                                        <ul>
+                                            <li><a href="#">205/65 R16</a></li>
+                                            <li><a href="#">205/65 R17</a></li>
+                                            <li><a href="#">205/65 R18</a></li>
+                                            <li><a href="#">205/65 R19</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="info-tw__item">
+                                        <h4 class="h4">Диски</h4>
+                                        <p class="p">Оригинальные размеры</p>
+                                        <ul>
+                                            <li><a href="#">7x16 ET39</a></li>
+                                        </ul>
+                                        <p class="p">
+                                            Альтернативные размеры <br />
+                                            (варианты замены)
+                                        </p>
+                                        <ul>
+                                            <li><a href="#"> 7x17 ET39</a></li>
+                                            <li><a href="#">7,5x18 ET40</a></li>
+                                            <li><a href="#">8x18 ET40 </a></li>
+                                            <li><a href="#">8x19 ET40</a></li>
+                                            <li><a href="#">8,5x19 ET40</a></li>
+                                        </ul>
+                                        <h4 class="h4">Параметры дисков:</h4>
+                                        <p class="p"><span>PCD: 5*100</span><span>DIA: 57.1</span><span>Крепеж: Болт: 14*1.5</span></p>
+                                    </div>
+                                </div>
+                                <div class="info-tw__logo">
+                                    <img src="@img/brand/tw/02_1.png" alt="картинка" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tw-s__subtitle bg-gray flex cv mt_36">
+                        <div class="container">
+                            <h2 class="subtitle">Наиболее популярные модели шин и дисков на Lamborghini Gallardo 2011 LP560-4 Facelift</h2>
+                        </div>
+                    </div>
+                    <div class="container catalog mt_36">
+                        <div class="catalog__content">
+                            <div class="catalog__top flex cv sb">
+                                <div class="catalog__count flex cv">
+                                    Найдено результатов
+                                    <span>7016</span>
+                                </div>
+                                <div class="catalog__control">
+                                    <div class="sort-box">
+                                        <div class="sort-box__text">Сортировка:</div>
+                                        <div class="select-box">
+                                            <input type="text" class="select-box__input input" value="По популярности" readonly />
+                                            <div class="select-box__arr">
+                                                <svg class="icon">
+                                                    <use xlink:href="@img/sprite.svg#arrow-slider"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select-box__list">
+                                                <ul>
+                                                    <li class="active">По популярности</li>
+                                                    <li>Сначала дешевле</li>
+                                                    <li>Сначала дороже</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__products flex fw">
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');" class="copyArt"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');" class="copyArt"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');" class="copyArt"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');" class="copyArt"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-cart">
+                                    <div class="prod-cart__badges flex dc">
+                                        <div class="badge badge-hit">ХИТ</div>
+                                    </div>
+                                    <div class="control-pc flex">
+                                        <div class="control-pc__season">
+                                            <img src="@img/icons/season_02_1.svg" class="icon_24" alt="season_icon" />
+                                        </div>
+                                        <div class="control-pc__article">
+                                            <div class="control-pc__subtext copyArt">Арт.</div>
+                                            <div class="control-pc__num">
+                                                <span>11532353</span>
+                                                <button onclick=" navigator.clipboard.writeText('11532353');"><img src="@img/icons/copy.svg" alt="copy_icon" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__img">
+                                        <img src="@img/product/prev/01.png" alt="card-img" />
+                                        <button class="prod-cart__favorite icon_24">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#favorite"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="info-pc">
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/security.svg" alt="security_icon" />
+                                            </div>
+                                            <div class="info-pc__icon icon_24">
+                                                <img src="@img/icons/calendar.svg" alt="calendar_icon" />
+                                            </div>
+                                            <div class="info-pc__lable">Хранение 0₽</div>
+                                            <div class="info-pc__lable">Шиномонтаж 0₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-cart__body">
+                                        <a href="#" class="prod-cart__name">Шина Triangle Group WinterX TW401</a>
+                                        <div class="prod-cart__offers flex fw">
+                                            <a href="#" class="prod-cart__offer help"
+                                                >205/50R17
+                                                <div class="help__text">Ширина/Высота Диаметр</div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >93V
+                                                <div class="help__text">
+                                                    Индекс скорости: 170 км/ч. <br />
+                                                    Индекс нагрузки: 650 кг
+                                                </div>
+                                            </a>
+                                            <a href="#" class="prod-cart__offer help"
+                                                >XL
+                                                <div class="help__text">Конструкция шины обладает усиленным каркасом</div>
+                                            </a>
+                                        </div>
+                                        <div class="prod-cart__bottom">
+                                            <div class="price-pc">
+                                                <div class="price-pc__value">6 558 ₽</div>
+                                                <div class="price-pc__one">26 232 ₽ <span>за 4 шт.</span></div>
+                                            </div>
+                                            <div class="add-pc">
+                                                <div class="add-pc__wrap">
+                                                    <div class="quantity">
+                                                        <button class="quantity__btn quantity__btn_minus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="number" class="quantity__input" value="4" />
+                                                        <button class="quantity__btn quantity__btn_plus">
+                                                            <svg class="icon">
+                                                                <use xlink:href="img/sprite.svg#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button class="prod-cart__add btn btn-primary">В корзину</button>
+                                                </div>
+                                                <a href="#" class="prod-cart__basket btn btn-green">
+                                                    Перейти в корзину
+                                                    <span>Товар добавлен</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="prod-cart__option">
+                                            <li>
+                                                <div>В наличии</div>
+                                                <div>Более 4 шт.</div>
+                                            </li>
+                                            <li>
+                                                <div>Получение</div>
+                                                <div>Сегодня</div>
+                                            </li>
+                                            <li>
+                                                <div>Доставка</div>
+                                                <div>Бесплатно</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            @@include('components/pagin/pagin.html', {})
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="secton-about text">
+                            <h2>Заголовок SEO-текста</h2>
+                            <p>Популярные производители, такие как Continental, Cordiant, Bridgestone, Goodyear и пр. выпускают модели с шипами и без них. Шипованные больше подходят для загородной езды и бездорожья. Они справляются с обледенелым покрытием и снежными заносами, но показывают плохую отводимость воды от пятна контакта.</p>
+                            <p>Для городских условий и использования преимущественно на твердых покрытиях лучше брать фрикционные автопокрышки. Они более комфортны в управлении, создают меньше шума и отлично препятствуют аквапланированию. В то же время такие шины не подходят для езды по снежным сугробам.</p>
+                            <p>Ассортимент товаров в интернет-магазине позволяет выбрать современные модели, последние новинки и нестареющую классику. Ценовой диапазон представляет шины от эконом-класса до премиальных. При покупке полного комплекта из 4 шин действует скидка 20% на шиномонтаж и специальные цены на межсезонное хранение на складе.</p>
+                        </div>
+
+                        <div class="section-tags mt_36">
+                            <h2 class="section-tags__title">Типоразмеры шин диаметра R15</h2>
+                            <div class="section-tags__items flex fw mt_16">
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                                <a href="#" class="section-tags__link">Audi RS Q0</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

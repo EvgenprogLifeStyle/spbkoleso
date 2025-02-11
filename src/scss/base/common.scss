@@ -1,0 +1,231 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.flex {
+  display: flex;
+}
+
+.i-flex {
+  display: inline-flex;
+}
+
+.cv {
+  align-items: center;
+}
+
+.ch {
+  justify-content: center;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.sa {
+  justify-content: space-around;
+}
+
+.as {
+  align-items: flex-start;
+}
+
+.js {
+  justify-content: flex-start;
+}
+
+.je {
+  justify-content: flex-end;
+}
+
+.fe {
+  align-items: flex-end;
+}
+
+.fw {
+  flex-wrap: wrap;
+}
+
+.dc {
+  flex-direction: column;
+}
+
+.flex-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexi-cc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.bg-i {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.contain {
+    background-size: contain;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+// Margin
+.mt_0 {
+  margin-top: 0;
+}
+
+.mt_16 {
+  margin-top: 16px;
+}
+
+.mt_24 {
+  margin-top: 24px;
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.mt_32 {
+  margin-top: 32px;
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+}
+
+.mt_36 {
+  margin-top: 36px;
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.mt_40 {
+  margin-top: 40px;
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.mt_64 {
+  margin-top: 64px;
+
+  @include lg {
+    margin-top: 52px;
+  }
+
+  @include md {
+    margin-top: 32px;
+  }
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.mt_80 {
+  margin-top: 80px;
+
+  @include lg {
+    margin-top: 64px;
+  }
+
+  @include md {
+    margin-top: 52px;
+  }
+
+  @include sm {
+    margin-top: 40px;
+  }
+}
+
+.mbm_80 {
+  margin-bottom: -80px;
+
+  @include lg {
+    margin-bottom: -64px;
+  }
+
+  @include md {
+    margin-bottom: -52px;
+  }
+
+  @include sm {
+    margin-bottom: -48px;
+  }
+}
+
+//Padding
+.pt_32 {
+  padding-top: 32px;
+
+  @include sm {
+    padding-top: 20px;
+  }
+}
+
+.pt_80 {
+  padding-top: 80px;
+
+  @include lg {
+    padding-top: 64px;
+  }
+
+  @include md {
+    padding-top: 40px;
+  }
+
+
+}
+
+.pb_80 {
+  padding-bottom: 80px;
+
+  @include lg {
+    padding-bottom: 64px;
+  }
+
+  @include md {
+    padding-bottom: 40px;
+  }
+}

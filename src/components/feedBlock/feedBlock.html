@@ -1,0 +1,46 @@
+<div class="bg-gray">
+   <div class="container">
+      <div class="faq">
+         <h2 class="subtitle">Задать вопрос</h2>
+         <p>Появился вопрос или хотите записаться на шиномонтаж? Заполните форму</p>
+         <form class="form-faq">
+            <div class="form-faq__wrap flex">
+               <div class="form-faq__contact flex dc">
+                  <div class="input-box">
+                     <label>Телефон</label>
+                     <input type="tel" class="input phone" placeholder="+7 (900) 000-00-00" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" />
+                     <div class="error">
+                        <div class="error__icon"><img src="img/icons/error.svg" alt="error_icon" /></div>
+                        <div class="error__text">Неверный формат</div>
+                     </div>
+                  </div>
+                  <div class="input-box">
+                     <label>Электронная почта для ответа</label>
+                     <input type="email" class="input" maxlength="64" required placeholder="Электронная почта" data-parsley-required-message="" data-parsley-type="email" />
+                     <div class="error">
+                        <div class="error__icon"><img src="img/icons/error.svg" alt="error_icon" /></div>
+                        <div class="error__text">Неверный формат</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-faq__mes">
+                  <div class="input-box">
+                     <label>Сообщение</label>
+                     <textarea class="input" name="" id=""></textarea>
+                  </div>
+               </div>
+            </div>
+            <div class="form-faq__control">
+               <div class="check-box">
+                  <label>
+                     <input type="checkbox" name="rad1" id="" required data-parsley-required-message="" />
+                     <span></span>
+                     <p>Я согласен с <a href="#">условиями</a> передачи данных</p>
+                  </label>
+               </div>
+               <button class="btn btn-primary">Отправить</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

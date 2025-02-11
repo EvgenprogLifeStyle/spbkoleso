@@ -1,0 +1,83 @@
+.panel-menu {
+    position: fixed;
+    bottom: -120%;
+    background: #FFF;
+    box-shadow: 0px -4px 8px 0px rgba(40, 40, 40, 0.08);
+    width: 100%;
+    z-index: 11;
+
+    @include md {
+        bottom: 0;
+    }
+
+    // .panel-menu__item
+    &__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 6px 8px;
+
+        &.active,
+        &._active {
+            .icon {
+                stroke: #E43A2D;
+            }
+        }
+    }
+
+    // .panel-menu__icon
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+
+        .icon {
+            width: inherit;
+            height: inherit;
+            stroke: #4F4F4F;
+            fill: transparent
+        }
+
+        // .panel-menu__icon_basket
+        &_basket {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                right: -6px;
+                padding: 1px 2px;
+                border-radius: 12px;
+                background: #282828;
+                color: #FFF;
+                display: inline-flex;
+                justify-content: center;
+                font-family: "Inter";
+                font-size: 6px;
+                font-weight: 600;
+                line-height: 115%;
+                min-width: 12px;
+            }
+
+            &.in {
+                span {
+                    background: #E43A2D;
+                }
+            }
+        }
+    }
+
+
+    // .panel-menu__name
+    &__name {
+        margin-top: 2px;
+        text-align: center;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 115%;
+    }
+}
+
+.openBurger {}

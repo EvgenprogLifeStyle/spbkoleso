@@ -1,0 +1,489 @@
+<div class="filter-home bg-gray tab @@class">
+    <div class="container">
+        <div class="filter-home__subtitle">Подобрать:</div>
+        <div class="filter-home__btns flex tab-head">
+            <button class="filter-home__btn active tab-head__btn" data-id="0">
+                <span class="filter-home__overlay">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#tab-01"></use>
+                    </svg>
+                    <span class="xl">Шины по параметрам</span>
+                    <span class="md">Шины</span>
+                </span>
+            </button>
+            <button class="filter-home__btn tab-head__btn" data-id="1">
+                <span class="filter-home__overlay">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#tab-02"></use>
+                    </svg>
+                    <span class="xl">Подбор по автомобилю</span>
+                    <span class="md">По авто</span>
+                </span>
+            </button>
+            <button class="filter-home__btn tab-head__btn" data-id="2">
+                <span class="filter-home__overlay">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#tab-03"></use>
+                    </svg>
+                    <span class="xl">Диски по параметрам</span>
+                    <span class="md">Диски</span>
+                </span>
+            </button>
+        </div>
+
+        <div class="filter-home__items">
+            <div class="filter-home__item filter-home__item_tire active tab-content" data-id="0">
+                <form action="" class="filter-home__form">
+                    <div class="filter-home__rows flex">
+                        <div class="filter-home__col">
+                            <div class="box-form order1" data-da=".filter-home__item_tire .filter-home__form,719">
+                                <label class="box-form__label">Ширина</label>
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="135">135</option>
+                                        <option value="145">145</option>
+                                        <option value="155">155</option>
+                                        <option value="165">165</option>
+                                        <option value="175">175</option>
+                                        <option value="185" disabled>185</option>
+                                        <option value="195">195</option>
+                                        <option value="200">200</option>
+                                        <option value="205">205</option>
+                                    </select>
+                                </div>
+                                <div class="select-box sport-input">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="135">135</option>
+                                        <option value="145">145</option>
+                                        <option value="155">155</option>
+                                        <option value="165">165</option>
+                                        <option value="175">175</option>
+                                        <option value="185" disabled>185</option>
+                                        <option value="195">195</option>
+                                        <option value="200">200</option>
+                                        <option value="205">205</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form order4" data-da=".filter-home__item_tire .filter-home__form,719,3">
+                                <label class="box-form__label">Сезон</label>
+                                <div class="season-form flex">
+                                    <div class="season-form__checkbox">
+                                        <input type="checkbox" class="season-form__input" id="all-season" />
+                                        <label for="all-season">Все</label>
+                                    </div>
+                                    <div class="season-form__checkbox">
+                                        <input type="checkbox" class="season-form__input" id="season_01" />
+                                        <label for="season_01">
+                                            <img src="@img/icons/season_01.svg" class="default" alt="season_icon" />
+                                            <img src="@img/icons/season_01_1.svg" class="hover" alt="season_icon" />
+                                        </label>
+                                        <div class="help">
+                                            <div class="help__text">Летние</div>
+                                        </div>
+                                    </div>
+                                    <div class="season-form__checkbox">
+                                        <input type="checkbox" class="season-form__input" id="season_02" checked />
+                                        <label for="season_02">
+                                            <img src="@img/icons/season_02.svg" class="default" alt="season_icon" />
+                                            <img src="@img/icons/season_02_1.svg" class="hover" alt="season_icon" />
+                                        </label>
+                                        <div class="help">
+                                            <div class="help__text">Зима шипованная</div>
+                                        </div>
+                                    </div>
+                                    <div class="season-form__checkbox">
+                                        <input type="checkbox" class="season-form__input" id="season_03" checked />
+                                        <label for="season_03">
+                                            <img src="@img/icons/season_03.svg" class="default" alt="season_icon" />
+                                            <img src="@img/icons/season_03_1.svg" class="hover" alt="season_icon" />
+                                        </label>
+                                        <div class="help">
+                                            <div class="help__text">Зима нешипованная</div>
+                                        </div>
+                                    </div>
+                                    <div class="season-form__checkbox">
+                                        <input type="checkbox" class="season-form__input" id="season_04" />
+                                        <label for="season_04">
+                                            <img src="@img/icons/season_04.svg" class="default" alt="season_icon" />
+                                            <img src="@img/icons/season_04_1.svg" class="hover" alt="season_icon" />
+                                        </label>
+                                        <div class="help">
+                                            <div class="help__text">Всесезонные</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-home__col">
+                            <div class="box-form order2" data-da=".filter-home__item_tire .filter-home__form,719,1">
+                                <label class="box-form__label">Высота</label>
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                        <option value="60">60</option>
+                                        <option value="65">65</option>
+                                    </select>
+                                </div>
+                                <div class="select-box sport-input">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                        <option value="60">60</option>
+                                        <option value="65">65</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form order5" data-da=".filter-home__item_tire .filter-home__form,719,4">
+                                <label class="box-form__label">Производитель шин</label>
+                                <div class="select-box openManuf">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="Производитель шин 1">Производитель шин 1</option>
+                                        <option value="Производитель шин 2">Производитель шин 2</option>
+                                        <option value="Производитель шин 3">Производитель шин 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-home__col">
+                            <div class="box-form order3" data-da=".filter-home__item_tire .filter-home__form,719,2">
+                                <label class="box-form__label">Диаметр</label>
+
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                    </select>
+                                </div>
+                                <div class="select-box sport-input">
+                                    <select class="select-custom">
+                                        <option value="Все" checked>Все</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form box-form_checkbox order6" data-da=".filter-home__item_tire .filter-home__form,719,3">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" id="ch-sport-1" class="sport-checkbox" />
+                                    <label for="ch-sport-1">Спорт комплект</label>
+                                    <div class="help help_sport openSport">
+                                        <div class="help__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#help"></use>
+                                            </svg>
+                                        </div>
+                                        <!-- <div class="help__text">Подбор разных размеров на переднюю и заднюю оси автомобиля</div> -->
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" id="ch-run-1" />
+                                    <label for="ch-run-1">Run flat</label>
+                                    <div class="help help_run openRun">
+                                        <div class="help__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="@img/sprite.svg#help"></use>
+                                            </svg>
+                                        </div>
+                                        <!-- <div class="help__text">Технология, позволяющая в случае прокола проехать на спущенной шине до 150 км</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-home__bottom flex cv">
+                        <button class="filter-home__send btn btn-primary">
+                            Подобрать шины
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arr-link"></use>
+                            </svg>
+                        </button>
+                        <button class="filter-home__reset">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#reset"></use>
+                            </svg>
+
+                            Сбросить параметры
+                        </button>
+                    </div>
+                </form>
+                <div class="filter-home__img">
+                    <img src="@img/all/filter_tire.png" alt="filter_tire_img" />
+                </div>
+            </div>
+            <div class="filter-home__item filter-home__item_auto tab-content" data-id="1">
+                <form action="" class="filter-home__form">
+                    <div class="filter-home__rows">
+                        <div class="filter-home__line flex">
+                            <div class="box-form box-form_auto">
+                                <label class="box-form__label"></label>
+                                <div class="select-box">
+                                    <select class="select-custom" readonly>
+                                        <option value="—" checked>—</option>
+                                        <option value="135">135</option>
+                                        <option value="145">145</option>
+                                        <option value="155">155</option>
+                                        <option value="165">165</option>
+                                        <option value="175">175</option>
+                                        <option value="185" disabled>185</option>
+                                        <option value="195">195</option>
+                                        <option value="200">200</option>
+                                        <option value="205">205</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form box-form_auto disabled" id="step1">
+                                <label class="box-form__label">2. Модель</label>
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="—" checked>—</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                        <option value="60">60</option>
+                                        <option value="65">65</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form box-form_auto disabled" id="step2">
+                                <label class="box-form__label">3. Год выпуска</label>
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="—" checked>—</option>
+                                        <option value="135">135</option>
+                                        <option value="145">145</option>
+                                        <option value="155">155</option>
+                                        <option value="165">165</option>
+                                        <option value="175">175</option>
+                                        <option value="185" disabled>185</option>
+                                        <option value="195">195</option>
+                                        <option value="200">200</option>
+                                        <option value="205">205</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box-form box-form_auto disabled" id="step3">
+                                <label class="box-form__label">4. Модификация</label>
+                                <div class="select-box">
+                                    <select class="select-custom">
+                                        <option value="—" checked>—</option>
+                                        <option value="Производитель шин 1">Производитель шин 1</option>
+                                        <option value="Производитель шин 2">Производитель шин 2</option>
+                                        <option value="Производитель шин 3">Производитель шин 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-home__bottom flex cv">
+                        <button class="filter-home__send btn btn-primary filter-auto_send" disabled>
+                            Подобрать шины
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arr-link"></use>
+                            </svg>
+                        </button>
+                        <button class="filter-home__reset filter-auto_reset">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#reset"></use>
+                            </svg>
+                            Сбросить параметры
+                        </button>
+                    </div>
+                </form>
+                <div class="filter-home__img">
+                    <img src="@img/all/filter_auto.png" alt="filter_auto_img" />
+                </div>
+            </div>
+            <div class="filter-home__item filter-home__item_disk tab-content" data-id="2">
+                <form action="" class="filter-home__form">
+                    <div class="filter-home__rows flex">
+                        <div class="box-form">
+                            <label class="box-form__label">Ширина</label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="135">135</option>
+                                    <option value="145">145</option>
+                                    <option value="155">155</option>
+                                    <option value="165">165</option>
+                                    <option value="175">175</option>
+                                    <option value="185" disabled>185</option>
+                                    <option value="195">195</option>
+                                    <option value="200">200</option>
+                                    <option value="205">205</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label">Диаметр</label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label">Кол-во отверстий</label>
+                            <select class="select-custom">
+                                <option value="Все" checked>Все</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label">
+                                <span> PCD </span>
+                                <div class="help">
+                                    <div class="help__icon">
+                                        <svg class="icon">
+                                            <use xlink:href="@img/sprite.svg#help"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="help__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, amet iure. Vel omnis, enim asperiores sit hic consectetur ab illum accusamus praesentium blanditiis quae tempora eos debitis esse aut tempore.</div>
+                                </div>
+                            </label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="PCD 1">PCD 1</option>
+                                    <option value="PCD 2">PCD 2</option>
+                                    <option value="PCD 3">PCD 3</option>
+                                    <option value="PCD 4">PCD 4</option>
+                                    <option value="PCD 5">PCD 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label">
+                                <span>Вылет</span>
+                                <div class="help">
+                                    <div class="help__icon">
+                                        <svg class="icon">
+                                            <use xlink:href="@img/sprite.svg#help"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="help__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, amet iure. Vel omnis, enim asperiores sit hic consectetur ab illum accusamus praesentium blanditiis quae tempora eos debitis esse aut tempore.</div>
+                                </div>
+                            </label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="135">135</option>
+                                    <option value="145">145</option>
+                                    <option value="155">155</option>
+                                    <option value="165">165</option>
+                                    <option value="175">175</option>
+                                    <option value="185" disabled>185</option>
+                                    <option value="195">195</option>
+                                    <option value="200">200</option>
+                                    <option value="205">205</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label"
+                                ><span>DIA</span>
+                                <div class="help">
+                                    <div class="help__icon">
+                                        <svg class="icon">
+                                            <use xlink:href="@img/sprite.svg#help"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="help__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, amet iure. Vel omnis, enim asperiores sit hic consectetur ab illum accusamus praesentium blanditiis quae tempora eos debitis esse aut tempore.</div>
+                                </div>
+                            </label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="DIA 1">DIA 1</option>
+                                    <option value="DIA 2">DIA 2</option>
+                                    <option value="DIA 3">DIA 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form">
+                            <label class="box-form__label">Тип дисков</label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="Тип дисков 1">Тип дисков 1</option>
+                                    <option value="Тип дисков 2">Тип дисков 2</option>
+                                    <option value="Тип дисков 3">Тип дисков 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-form box-form_full">
+                            <label class="box-form__label">Производитель дисков</label>
+                            <div class="select-box">
+                                <select class="select-custom">
+                                    <option value="Все" checked>Все</option>
+                                    <option value="Производитель дисков 1">Производитель дисков 1</option>
+                                    <option value="Производитель дисков 2">Производитель дисков 2</option>
+                                    <option value="Производитель дисков 3">Производитель дисков 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-home__bottom flex cv">
+                        <button class="filter-home__send btn btn-primary">
+                            Подобрать шины
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arr-link"></use>
+                            </svg>
+                        </button>
+                        <button class="filter-home__reset">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#reset"></use>
+                            </svg>
+                            Сбросить параметры
+                        </button>
+                    </div>
+                </form>
+                <div class="filter-home__img">
+                    <img src="@img/all/filter_disk.png" alt="filter_disk_img" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

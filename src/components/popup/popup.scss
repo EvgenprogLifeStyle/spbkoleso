@@ -1,0 +1,312 @@
+.b-popup {
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+
+  .popup__text {
+    margin-top: 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .btn {
+    height: 50px;
+    margin-top: 20px;
+  }
+}
+
+.modal-sm-full {
+  @include sm {
+    max-width: calc(100% + 12px) !important;
+    width: calc(100vw + 12px) !important;
+    min-height: calc(100% + 12px);
+    margin: -6px;
+    border-radius: 0;
+    padding: 0 !important;
+
+    .fancybox-close-small {
+      padding: 0px;
+      width: 24px;
+      height: 24px;
+      top: 16px;
+      right: 16px;
+
+      svg {
+        color: var(--text-main);
+      }
+    }
+
+    .popup__title {
+      min-height: 52px;
+      box-shadow: 0 8px 8px 0 rgba(40, 40, 40, 0.08);
+      display: flex;
+      align-items: center;
+      padding: 12px 50px 12px 20px;
+      line-height: 1;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    .popup__body {
+      flex: 1 1 auto;
+      padding: 20px;
+      max-height: calc(100svh - 120px);
+      overflow-y: auto;
+    }
+
+    .popup__bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.1);
+      padding: 8px 20px;
+      width: 100%;
+      background: #fff;
+    }
+  }
+}
+
+.order-popup {
+  max-width: 900px;
+  width: 100%;
+
+  @include md {
+    max-width: 600px;
+  }
+
+  @include sm {
+    max-width: calc(100% + 12px);
+    width: calc(100vw + 12px);
+    min-height: calc(100% + 12px);
+    margin: -6px;
+    border-radius: 0;
+
+    padding: 0;
+  }
+
+  .fancybox-close-small {
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: 16px;
+
+    svg {
+      color: var(--text-main);
+    }
+  }
+
+  .popup__title {
+    @include sm {
+      min-height: 56px;
+      box-shadow: 0 8px 8px 0 rgba(40, 40, 40, 0.08);
+      display: flex;
+      align-items: center;
+      padding: 18px 50px 18px 20px;
+      line-height: 140%;
+    }
+  }
+
+  // .order-popup__body
+  &__body {
+    margin-top: 20px;
+    padding: 20px 0px;
+
+    @include sm {
+      padding: 20px 20px 64px;
+      flex: 1 1 auto;
+    }
+
+    .select2 {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // .order-popup__line
+  &__line {
+    font-weight: 500;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .order-popup__feed
+  &__feed {
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--text-third);
+  }
+
+  // .order-popup__bottom
+  &__bottom {
+    margin-top: 20px;
+    text-align: right;
+    gap: 20px;
+
+    @include sm {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      flex-direction: column-reverse;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .btn {
+      height: 50px;
+      font-size: 18px;
+      line-height: 140%;
+
+      @include sm {
+        max-width: 100% !important;
+        height: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  // .order-popup__back
+  &__back {
+    color: var(--text-main);
+    padding: 0px 16px;
+    max-width: 98px;
+  }
+
+  // .order-popup__send
+  &__send {
+    max-width: 207px;
+  }
+}
+
+.popup-ep {
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+
+  .popup__title {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    .input-box {
+      flex: 1 1 auto;
+    }
+  }
+
+  // .popup-ep__bottom
+
+  &__bottom {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .btn-outline {
+    width: 108px;
+    flex-shrink: 0;
+  }
+
+  .btn-primary {
+    width: 230px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  // .popup-ep__btns
+
+  &__btns {
+    gap: 12px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .popup__text {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+  }
+}
+
+#edit-password {}
+
+.row {
+  display: flex;
+
+  &.row-16 {
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .col-2 {
+      width: calc(50% - 8px);
+
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//========================================================================================================================================================
+.season-p {
+  max-width: 385px;
+  width: 100%;
+  padding: 24px;
+
+  @include sm {
+    max-width: 320px;
+  }
+
+  // .season-p__desc
+  &__desc {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 24px;
+  }
+
+  .fancybox-slide--html .fancybox-close-small {
+    right: 12px;
+    top: 16px;
+  }
+
+  // .season-p__body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+
+    .checkbox {
+      &:not(:last-child) {}
+    }
+  }
+
+  .btn {
+    margin-top: 24px;
+    height: 45px;
+  }
+}

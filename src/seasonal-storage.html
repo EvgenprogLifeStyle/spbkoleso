@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Сезонное хранение шин и дисков на тёплом складе" })
+    <body>
+        <input type="checkbox" name="" id="maketbtn" />
+        <div class="maket">
+            <img src="@img/hlam/ss.png" class="xl" />
+            <img src="@img/hlam/ss_phone.png" class="sm" />
+        </div>
+
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Сезонное хранение шин и дисков на тёплом складе</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Сезонное хранение шин и дисков на тёплом складе</h1>
+                    </div>
+                </div>
+                <div class="ss">
+                    <div class="container">
+                        <div class="ss__head flex mt_24 as">
+                            <div class="ss__products flex">
+                                <div class="min-pc">
+                                    <a href="#" class="min-pc__name link">Шины</a>
+                                    <ul class="option-pc">
+                                        <li>
+                                            <div>Количество</div>
+                                            <div>4 шт.</div>
+                                        </li>
+                                        <li>
+                                            <div>Сезон</div>
+                                            <div>8 мес.</div>
+                                        </li>
+                                    </ul>
+                                    <div class="price-pc">
+                                        <div class="price-pc__value">3 000 ₽</div>
+                                        <div class="price-pc__one">375 ₽ <span>в месяц</span></div>
+                                    </div>
+                                    <div class="add-pc">
+                                        <button class="add-pc__add btn btn-primary">Заказать</button>
+                                        <a href="#" class="add-pc__basket btn btn-green">
+                                            Перейти в корзину
+                                            <span>Товар добавлен</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="min-pc">
+                                    <a href="#" class="min-pc__name link">Шины + Диски</a>
+                                    <ul class="option-pc">
+                                        <li>
+                                            <div>Количество</div>
+                                            <div>4 шт.</div>
+                                        </li>
+                                        <li>
+                                            <div>Сезон</div>
+                                            <div>8 мес.</div>
+                                        </li>
+                                    </ul>
+                                    <div class="price-pc">
+                                        <div class="price-pc__value">4 000 ₽</div>
+                                        <div class="price-pc__one">500 ₽ <span>в месяц</span></div>
+                                    </div>
+                                    <div class="add-pc">
+                                        <button class="add-pc__add btn btn-primary">Заказать</button>
+                                        <a href="#" class="add-pc__basket btn btn-green">
+                                            Перейти в корзину
+                                            <span>Товар добавлен</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss__content text">
+                                <h3>Лучший оснащенный склад шин в spbkoleso</h3>
+                                <ul>
+                                    <li>Мы соблюдаем правила хранения шин и гарантируем вам максимально долгий срок эксплуатации!</li>
+                                    <li>Вы можете забрать свой комплект колес в любой момент, не дожидаясь окончания срока хранения.</li>
+                                    <li>
+                                        Записывайтесь на шиномонтаж, <br />
+                                        и к установленному времени, колеса будут вас ждать на месте.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ss__banner">
+                            <img src="@img/all/ss_banner.png" class="xl" alt="картинка баннера" />
+                            <img src="@img/all/ss_banner_sm.png" class="sm" alt="картинка баннера" />
+                        </div>
+                        <div class="address-ss flex">
+                            <div class="address-ss__item">
+                                <p>Запишитесь на шиномонтаж по телефону</p>
+                                <p><a href="tel:88127030373">8 (812) 703 03 73</a> доб. 17</p>
+                            </div>
+                            <div class="address-ss__item">
+                                <p>Офис и центральный склад</p>
+                                <p><span>Санкт-Петербург, Октябрьская наб. д. 104 к. 13</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stock-list pt_80 pb_80 mt_80 mbm_80 bg-gray">
+                        <div class="container">
+                            <h2 class="subtitle">Специальные предложения</h2>
+                            <div class="stock-list__items stock-list__items_b flex fw">
+                                <a href="#" class="stock-list__item">
+                                    <img src="@img/stock/prev/01_b.png" class="xl" alt="stock_img" />
+                                    <img src="@img/stock/prev/01.png" class="sm" alt="stock_img" />
+                                </a>
+                                <a href="#" class="stock-list__item">
+                                    <img src="@img/stock/prev/02_b.png" class="xl" alt="stock_img" />
+                                    <img src="@img/stock/prev/02.png" class="sm" alt="stock_img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+            </div>
+
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.repair-p {
+  gap: 108px;
+
+  @include lg {
+    gap: 48px;
+  }
+
+  @include md {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &.text {
+
+    li,
+    p {
+      font-size: 16px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &>div {
+    flex: 1;
+
+    &:nth-child(1) {
+      flex: 0 0 43%;
+
+      @include md {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  img {
+    aspect-ratio: 540/164;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    margin-top: 34px;
+    max-width: 100%;
+
+    @include md {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    @include sm {
+      aspect-ratio: 320/164;
+    }
+  }
+}

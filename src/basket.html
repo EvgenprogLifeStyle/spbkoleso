@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+   @@include('components/head.html', { "title":"Корзина" })
+   <body>
+      <main class="main">
+         @@include('components/header/header.html', {})
+         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" type="text/javascript"></script>
+         <div class="wrapper">
+            <div class="head-page bg-gray">
+               <div class="container">
+                  <a href="#" class="back">
+                     <svg>
+                        <use xlink:href="@img/sprite.svg#arrow-up"></use>
+                     </svg>
+                     Вернуться к выбору товаров</a
+                  >
+                  <h1 class="title">Корзина</h1>
+               </div>
+            </div>
+            <div class="container">
+               <form id="basket" class="basket">
+                  <div class="basket__head flex cv sb">
+                     <div class="basket__count">В корзине 2 товара</div>
+                     <button type="button" class="basket__clear link-underline clearBasket">Очистить корзину</button>
+                  </div>
+                  <div class="prod-b">
+                     <div class="prod-b__item">
+                        <div class="prod-b__info">
+                           <div class="prod-b__img">
+                              <img src="@img/product/detail/01.png" alt="картинка товара" />
+                           </div>
+                           <div class="prod-b__content">
+                              <div class="prod-b__art">Артикул: <span>2955670</span></div>
+                              <a href="#" class="prod-b__name link">Шина Triangle Group WinterX TW401</a>
+                              <div class="prod-b__manuf flex fw">
+                                 <div class="prod-b__man">
+                                    <span><img src="@img/icons/season_02_1.svg" alt="icon" /></span>
+                                 </div>
+                                 <div class="prod-b__man">205/50</div>
+                                 <div class="prod-b__man">R17</div>
+                                 <div class="prod-b__man">93V</div>
+                                 <div class="prod-b__man">XL</div>
+                              </div>
+                              <div class="flex fw labels">
+                                 <a href="#" class="label">Хранение 0₽</a>
+                                 <a href="#" class="label">Шиномонтаж 0₽</a>
+                                 <a href="#" class="label">Расширенная гарантия</a>
+                                 <a href="#" class="label">Рассрочка 0-0-6</a>
+                                 <button type="button" class="label openSdt">
+                                    <span><img src="@img/icons/split.svg" alt="split_icon" /></span>Сплит
+                                 </button>
+                                 <button type="button" class="label openSdtD">
+                                    <span><img src="@img/icons/dol.svg" alt="split_icon" /></span>Долями
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="prod-b__control flex">
+                           <div class="prod-b__one flex">
+                              <div class="prod-b__price flex cv">6 558 ₽ <span></span></div>
+                              <div class="quantity">
+                                 <button type="button" class="quantity__btn quantity__btn_minus">
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#minus"></use>
+                                    </svg>
+                                 </button>
+                                 <input type="number" class="quantity__input" value="4" />
+                                 <button type="button" class="quantity__btn quantity__btn_plus">
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#plus"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="total-pb">
+                              <div class="total-pb__total">26 232 ₽</div>
+                              <div class="total-pb__bottom flex">
+                                 <button type="button" class="total-pb__btn">
+                                    <svg>
+                                       <use xlink:href="@img/sprite.svg#favorite"></use>
+                                    </svg>
+                                 </button>
+                                 <button type="button" class="total-pb__btn delProduct">
+                                    <svg>
+                                       <use xlink:href="@img/sprite.svg#del"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="prod-b__item">
+                        <div class="prod-b__info">
+                           <div class="prod-b__img">
+                              <img src="@img/product/detail/02.png" alt="картинка товара" />
+                           </div>
+                           <div class="prod-b__content">
+                              <div class="prod-b__art">Артикул: <span>2955670</span></div>
+                              <a href="#" class="prod-b__name link">Диск Alcasta M21 </a>
+                              <div class="prod-b__manuf flex fw">
+                                 <div class="prod-b__man">8x18</div>
+                                 <div class="prod-b__man">5x120</div>
+                                 <div class="prod-b__man">ET42.0</div>
+                                 <div class="prod-b__man">D67.1</div>
+                                 <div class="prod-b__man">Цвет: Черный с полировкой (ВК)</div>
+                                 <div class="prod-b__man">Тип: Литые</div>
+                              </div>
+                              <div class="flex fw labels">
+                                 <a href="#" class="label">Хранение 0₽</a>
+                                 <a href="#" class="label">Шиномонтаж 0₽</a>
+                                 <a href="#" class="label">Гарантия 1 год</a>
+                                 <a href="#" class="label">Рассрочка 0-0-6</a>
+                                 <button type="button" class="label openSdt">
+                                    <span><img src="@img/icons/split.svg" alt="split_icon" /></span>Сплит
+                                 </button>
+                                 <button type="button" class="label openSdtD">
+                                    <span><img src="@img/icons/dol.svg" alt="split_icon" /></span>Долями
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="prod-b__control flex">
+                           <div class="prod-b__one flex">
+                              <div class="prod-b__price flex cv">3 069 ₽ <span></span></div>
+                              <div class="quantity">
+                                 <button type="button" class="quantity__btn quantity__btn_minus">
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#minus"></use>
+                                    </svg>
+                                 </button>
+                                 <input type="number" class="quantity__input" value="4" />
+                                 <button type="button" class="quantity__btn quantity__btn_plus">
+                                    <svg class="icon">
+                                       <use xlink:href="img/sprite.svg#plus"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="total-pb">
+                              <div class="total-pb__total">12 276 ₽</div>
+                              <div class="total-pb__bottom flex">
+                                 <button type="button" class="total-pb__btn">
+                                    <svg>
+                                       <use xlink:href="@img/sprite.svg#favorite"></use>
+                                    </svg>
+                                 </button>
+                                 <button type="button" class="total-pb__btn delProduct">
+                                    <svg>
+                                       <use xlink:href="@img/sprite.svg#del"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="basket__wrap flex as">
+                     <div class="form-b">
+                        <div class="form-b__head flex">
+                           <button type="button" class="form-b__btn active">Оформление заказа</button>
+                           <button type="button" class="form-b__btn orderPopup">Быстрый заказ</button>
+                        </div>
+                        <div class="form-b__wrap">
+                           <div class="form-b__login flex cv">
+                              <p>
+                                 Вы не авторизованы.
+                                 <a href="#" class="link-underline">Авторизоваться</a>
+                              </p>
+                           </div>
+                           <div class="form-b__item">
+                              <div class="form-b__subname">1. Контактные данные</div>
+                              <div class="form-b__box">
+                                 <div class="input-box">
+                                    <label>Имя<span>*</span></label>
+                                    <input type="text" class="input _text" maxlength="64" placeholder="Иван" required data-parsley-error-message="" data-parsley-minlength="3" oninput="this.value=this.value.replace(/[^a-zA-ZА-Яа-я ]/g,'');" data-parsley-group="basket" />
+                                    <div class="error">
+                                       <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                       <div class="error__text">Необходимое поле</div>
+                                    </div>
+                                 </div>
+                                 <div class="input-box">
+                                    <label>Телефон<span>*</span></label>
+                                    <input type="tel" class="input phone" placeholder="+7 (900) 000-00-00" required data-parsley-error-message="" data-parsley-pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" data-parsley-group="basket" />
+                                    <div class="error">
+                                       <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                       <div class="error__text">Неверный формат</div>
+                                    </div>
+                                 </div>
+                                 <div class="input-box">
+                                    <label>Email<span>*</span></label>
+                                    <input type="email" class="input" maxlength="64" required placeholder="mail@mail.ru" data-parsley-required-message="" data-parsley-type="email" data-parsley-group="basket" />
+                                    <div class="error">
+                                       <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                       <div class="error__text">Неверный формат</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-b__item">
+                              <div class="form-b__subname">2. Способ доставки</div>
+                              <div class="del-b">
+                                 <div class="del-b__btns flex fw">
+                                    <div class="del-b__btn del-b__btn_1 active" data-id="0">Самовывоз</div>
+                                    <div class="del-b__btn del-b__btn_2" data-id="1">Доставка</div>
+                                    <div class="del-b__block del-b__block_1 active" data-id="0">
+                                       <div class="rad-block">
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" checked name="rad1" id="" />
+                                                <span></span>
+                                                <p>СПБ, Октябрьская наб 104, к 13</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Веденеева ул., д. 12, кор. 4, пом. 3Н (Шиномонтаж, автосервис Технология)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Возрождения ул. д.36Ас1 (Шиномонтаж JS-Shina)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>КИМа пр., 32 (шиномонтаж Js Shina)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Караваевская ул. д.47 (СТО Рыбацкое)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Возрождения ул. д.36Ас1 (Шиномонтаж JS-Shina)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>КИМа пр., 32 (шиномонтаж Js Shina)</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Караваевская ул. д.47 (СТО Рыбацкое)</p>
+                                             </label>
+                                          </div>
+                                          <button type="button" class="rad-block__more"><img src="@img/icons/down.svg" alt="иконка" /> <span>Показать еще</span></button>
+                                          <div class="check-box">
+                                             <label>
+                                                <input type="checkbox" name="rad1" id="" />
+                                                <span></span>
+                                                <p>Нужен шиномонтаж</p>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="del-b__block del-b__block_2" data-id="1">
+                                       <div class="del-tab">
+                                          <div class="del-tab__text">Доставка по Санкт-Петербургу: <br />- Бесплатно с 11:00 до 23:00</div>
+                                          <div class="input-box">
+                                             <label>Адрес доставки </label>
+                                             <input type="text" class="input" maxlength="64" placeholder="Введите адрес" />
+                                             <div class="error">
+                                                <div class="error__icon"><img src="@img/icons/error.svg" alt="error_icon" /></div>
+                                                <div class="error__text">Необходимое поле</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="del-b__btn del-b__btn_3" data-id="2">Транспортная компания</div>
+                                    <div class="del-b__btn del-b__btn_4" data-id="3">Доставка с моб. шиномонтажом</div>
+                                    <div class="del-b__block del-b__block_3" data-id="2">
+                                       <div class="del-tr">
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" checked name="rad2" id="" />
+                                                <span></span>
+                                                <p>Первая Экспедиционная Компания - www.pecom.ru</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad2" id="" />
+                                                <span></span>
+                                                <p>Деловые линии - www.dellin.ru</p>
+                                             </label>
+                                          </div>
+                                          <div class="radio-box">
+                                             <label>
+                                                <input type="radio" name="rad2" id="adres-btn" />
+                                                <span></span>
+                                                <p>Другая</p>
+                                             </label>
+                                          </div>
+                                          <div id="adres-input" class="input-box">
+                                             <input type="text" class="input" maxlength="64" placeholder="Введите название" />
+                                          </div>
+                                          <div class="input-box">
+                                             <label>Адрес доставки </label>
+                                             <input type="text" class="input" maxlength="64" placeholder="Введите адрес" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="del-b__block del-b__block_4" data-id="3">
+                                       <div class="del-shina">
+                                          <div class="del-shina__text">Бесплатная доставка при заказе моб. шиномонтажа</div>
+                                          <div class="input-box">
+                                             <label>Адрес доставки </label>
+                                             <input type="text" class="input" maxlength="64" placeholder="Введите адрес" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="del-b__sale">Бесплатная доставка при заказе моб. шиномонтажа</div>
+                                 </div>
+                                 <div class="del-b__list">
+                                    <div class="del-b__item maps">
+                                       <div class="maps__head flex">
+                                          <div class="maps__search flex">
+                                             <div class="input-box">
+                                                <!-- <select class="js-example-placeholder-multiple js-states form-control" multiple="multiple"></select> -->
+                                                <select class="select-search js-states form-control" multiple="multiple" placeholder="Поиск по адресу или станции метро"></select>
+                                             </div>
+                                             <select class="select-custom">
+                                                <option value="" disabled>Не выбран</option>
+                                                <option value="Санкт-Петербург" checked>Санкт-Петербург</option>
+                                                <option value="Всеволожск">Всеволожск</option>
+                                                <option value="Зеленогорск">Зеленогорск</option>
+                                                <option value="Колпино">Колпино</option>
+                                                <option value="Кудрово">Кудрово</option>
+                                                <option value="Красное село">Красное село</option>
+                                                <option value="Москва">Москва</option>
+                                             </select>
+                                          </div>
+                                          <div class="maps__ch flex">
+                                             <button type="button" class="active" data-id="0">На карте</button>
+                                             <button type="button" data-id="1">Списком</button>
+                                             <div class="maps__filter filterBasket">
+                                                <img src="@img/icons/filtr.svg" alt="иконка" />
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="maps__list">
+                                          <div class="maps__item active" data-id="0">
+                                             <div class="map-basket">
+                                                <div id="map" class="map-basket__iframe"></div>
+
+                                                <script>
+                                                   ymaps.ready(init);
+                                                   // Создаём макет содержимого.
+
+                                                   const data = [
+                                                      {
+                                                         type: "Feature",
+                                                         id: 0,
+                                                         geometry: {
+                                                            type: "Point",
+                                                            coordinates: [59.938784, 30.314997],
+                                                         },
+                                                         properties: { balloonContentHeader: "<font size=3><b> Метка </b></font>" },
+                                                      },
+                                                      {
+                                                         type: "Feature",
+                                                         id: 1,
+                                                         geometry: {
+                                                            type: "Point",
+                                                            coordinates: [59.938884, 30.414997],
+                                                         },
+                                                         properties: { balloonContentHeader: "<font size=3><b> Метка </b></font>" },
+                                                      },
+                                                   ];
+                                                   function init() {
+                                                      var myMap = new ymaps.Map(
+                                                            "map",
+                                                            {
+                                                               center: [59.938784, 30.314997],
+                                                               zoom: 10,
+                                                            },
+                                                            {}
+                                                         ),
+                                                         objectManager = new ymaps.ObjectManager({
+                                                            // Чтобы метки начали кластеризоваться, выставляем опцию.
+                                                            clusterize: true,
+                                                            // ObjectManager принимает те же опции, что и кластеризатор.
+                                                            gridSize: 32,
+                                                            clusterDisableClickZoom: true,
+                                                         });
+
+                                                      objectManager.objects.options.set("preset", "islands#redDotIcon");
+                                                      objectManager.clusters.options.set("preset", "islands#redClusterIcons");
+                                                      myMap.geoObjects.add(objectManager);
+
+                                                      // $.ajax({
+                                                      //     url: "data.json"
+                                                      // }).done(function (data) {
+                                                      //     objectManager.add(data);
+                                                      // });
+
+                                                      data.forEach((e) => objectManager.add(e));
+                                                   }
+                                                </script>
+                                                <div class="map-basket__aside">
+                                                   <div class="map-basket__sel flex dc">
+                                                      <select class="district">
+                                                         <option value="" disabled>Не выбран</option>
+                                                         <option value="Адмиралтейский">Адмиралтейский</option>
+                                                         <option value="Василеостровский">Василеостровский</option>
+                                                         <option value="Выборгский">Выборгский</option>
+                                                         <option value="Калининский">Калининский</option>
+                                                         <option value="Кировский">Кировский</option>
+                                                         <option value="Колпинский">Колпинский</option>
+                                                         <option value="Колпинский">Колпинский</option>
+                                                         <option value="Колпинский">Колпинский</option>
+                                                         <option value="Колпинский">Колпинский</option>
+                                                      </select>
+                                                      <select class="metro">
+                                                         <option value="" disabled>Станция метро</option>
+                                                         <option value="Автово" data-icon="metro_01.svg">Автово</option>
+                                                         <option value="Адмиралтейская" data-icon="metro_02.svg">Адмиралтейская</option>
+                                                         <option value="Академическая" data-icon="metro_01.svg">Академическая</option>
+                                                         <option value="Балтийская" data-icon="metro_01.svg">Балтийская</option>
+                                                         <option value="Бухарестская" data-icon="metro_02.svg">Бухарестская</option>
+                                                         <option value="Василеостровская" data-icon="metro_03.svg">Василеостровская</option>
+                                                         <option value="Автово" data-icon="metro_01.svg">Автово</option>
+                                                      </select>
+                                                   </div>
+
+                                                   <div class="map-basket__result res-map">
+                                                      <div class="res-map__drop active">
+                                                         <div class="res-map__head"><span style="background-color: #e43a2d"></span>Невский р-н</div>
+                                                         <div class="res-map__body">
+                                                            <div class="res-map__item">
+                                                               <div class="res-map__name">
+                                                                  <p>
+                                                                     <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                                                                  </p>
+                                                                  <p>Октябрьская наб., д. 104, к. 13</p>
+                                                               </div>
+                                                               <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                               <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                               <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                            </div>
+                                                            <div class="res-map__item">
+                                                               <div class="res-map__name">
+                                                                  <p>
+                                                                     <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                                                                  </p>
+                                                                  <p>Октябрьская наб., д. 104, к. 13</p>
+                                                               </div>
+                                                               <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                               <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                               <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="maps__item maps__item_list" data-id="1">
+                                             <div class="head-ml flex">
+                                                <select class="district">
+                                                   <option value="" disabled>Не выбран</option>
+                                                   <option value="Адмиралтейский">Адмиралтейский</option>
+                                                   <option value="Василеостровский">Василеостровский</option>
+                                                   <option value="Выборгский">Выборгский</option>
+                                                   <option value="Калининский">Калининский</option>
+                                                   <option value="Кировский">Кировский</option>
+                                                   <option value="Колпинский">Колпинский</option>
+                                                   <option value="Колпинский">Колпинский</option>
+                                                   <option value="Колпинский">Колпинский</option>
+                                                   <option value="Колпинский">Колпинский</option>
+                                                </select>
+                                                <select class="metro">
+                                                   <option value="" disabled>Станция метро</option>
+                                                   <option value="Автово" data-icon="metro_01.svg">Автово</option>
+                                                   <option value="Адмиралтейская" data-icon="metro_02.svg">Адмиралтейская</option>
+                                                   <option value="Академическая" data-icon="metro_01.svg">Академическая</option>
+                                                   <option value="Балтийская" data-icon="metro_01.svg">Балтийская</option>
+                                                   <option value="Бухарестская" data-icon="metro_02.svg">Бухарестская</option>
+                                                   <option value="Василеостровская" data-icon="metro_03.svg">Василеостровская</option>
+                                                   <option value="Автово" data-icon="metro_01.svg">Автово</option>
+                                                </select>
+                                             </div>
+                                             <div class="res-map">
+                                                <div class="res-map__drop active">
+                                                   <div class="res-map__head"><span style="background-color: #e43a2d"></span>Невский р-н</div>
+                                                   <div class="res-map__body">
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                                                            </p>
+                                                            <p>Октябрьская наб., д. 104, к. 13</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Елизаровская
+                                                            </p>
+                                                            <p>Байконурская ул., д 21</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_02.svg" alt="иконка метро" /></span>Проспект Большевиков
+                                                            </p>
+                                                            <p>Байконурская ул., д 21</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="res-map__drop">
+                                                   <div class="res-map__head"><span style="background-color: #e43a2d"></span>Адмиралтейский р-н</div>
+                                                   <div class="res-map__body">
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Пролетарская
+                                                            </p>
+                                                            <p>Октябрьская наб., д. 104, к. 13</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_03.svg" alt="иконка метро" /></span>Елизаровская
+                                                            </p>
+                                                            <p>Байконурская ул., д 21</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                      <div class="res-map__item">
+                                                         <div class="res-map__name">
+                                                            <p>
+                                                               <span><img src="@img/icons/metro_02.svg" alt="иконка метро" /></span>Проспект Большевиков
+                                                            </p>
+                                                            <p>Байконурская ул., д 21</p>
+                                                         </div>
+                                                         <div class="res-map__desc">Офис и центральный склад СПБКолесо</div>
+                                                         <div class="res-map__jobs">Режим работы: 10:00 - 22:00</div>
+                                                         <button type="button" class="res-map__btn btn btn-primary">Забрать здесь</button>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-b__item">
+                              <div class="form-b__subname">3. Способ оплаты</div>
+                              <div class="pay-b flex fw">
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" checked />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_01.svg" alt="иконка" /></span>Наличными
+                                       </p>
+                                    </label>
+                                 </div>
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" id="pay-b-bk" />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_02.svg" alt="иконка" /></span>Банковской картой
+                                       </p>
+                                    </label>
+                                 </div>
+                                 <div class="pay-b__radio pay-b__radio_1">
+                                    <div class="radio-box">
+                                       <label>
+                                          <input type="radio" checked name="rad3" id="" />
+                                          <span></span>
+                                          <p>в нашем офисе</p>
+                                       </label>
+                                    </div>
+                                    <div class="radio-box">
+                                       <label>
+                                          <input type="radio" name="rad3" id="" />
+                                          <span></span>
+                                          <p>через интернет</p>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" id="pay-b-bp" />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_03.svg" alt="иконка" /></span>Банковским переводом
+                                       </p>
+                                    </label>
+                                 </div>
+                                 <div class="pay-b__radio pay-b__radio_2">
+                                    <div class="radio-box">
+                                       <label>
+                                          <input type="radio" checked name="rad4" id="" />
+                                          <span></span>
+                                          <p>от физического лица</p>
+                                       </label>
+                                    </div>
+                                    <div class="radio-box">
+                                       <label>
+                                          <input type="radio" name="rad4" id="" />
+                                          <span></span>
+                                          <p>от физического лица</p>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_04.svg" alt="иконка" /></span>Яндекс Пэй со Сплитом
+                                       </p>
+                                    </label>
+                                 </div>
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_05.svg" alt="иконка" /></span>Долями
+                                       </p>
+                                    </label>
+                                 </div>
+                                 <div class="pay-b__btn">
+                                    <label>
+                                       <input type="radio" name="pay-b" />
+                                       <p>
+                                          <span><img src="@img/icons/pay_b_06.svg" alt="иконка" /></span>Рассрочка
+                                       </p>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-b__item">
+                              <div class="form-b__subname">4. Комментарий к заказу</div>
+                              <div class="comment-b">
+                                 <div class="input-box">
+                                    <textarea class="input" name="" id="" placeholder="Введите текст"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order-b">
+                        <div class="order-b__subtitle">Ваш заказ</div>
+                        <ul class="order-b__list">
+                           <li class="_top">
+                              <div>Общая стоимость<span>(8 товаров)</span></div>
+                              <div>38 508 ₽</div>
+                           </li>
+                           <li>
+                              <div>Доставка</div>
+                              <div class="_green">Бесплатно</div>
+                           </li>
+                           <li>
+                              <div>Шиномонтаж</div>
+                              <div><span class="_old">4000 ₽</span> <span class="_black">0 ₽ </span></div>
+                           </li>
+                           <li>
+                              <div>Хранение</div>
+                              <div><span class="_old">4000 ₽</span> <span class="_black">0 ₽ </span></div>
+                           </li>
+                           <li>
+                              <div>Стеклоочиститель</div>
+                              <div><span class="_sale">В подарок</span></div>
+                           </li>
+                        </ul>
+                        <div class="login-ob">
+                           <div class="login-ob__wrap flex">
+                              <div class="login-ob__icon"><img src="@img/icons/info.svg" alt="иконка" /></div>
+                              <div class="login-ob__text"><a href="#" class="text-decoration">Авторизуйтесь</a>, чтобы списать и начислить бонусные баллы</div>
+                           </div>
+                        </div>
+                        <div class="promocod">
+                           <div class="input-box">
+                              <input type="text" class="input" maxlength="64" placeholder="Промокод" required data-parsley-error-message="" data-parsley-minlength="1" />
+                              <button type="button" class="promocod__btn">Применить</button>
+                           </div>
+                        </div>
+                        <div class="promocod _success">
+                           <div class="input-box">
+                              <input type="text" class="input" maxlength="64" value="START" placeholder="Промокод" required data-parsley-error-message="" data-parsley-minlength="1" />
+                              <button type="button" class="promocod__btn">Отменить</button>
+                           </div>
+                           <div class="promocod__result">Промокод применен</div>
+                        </div>
+                        <div class="promocod _error">
+                           <div class="input-box">
+                              <input type="text" class="input" maxlength="64" value="START" placeholder="Промокод" required data-parsley-error-message="" data-parsley-minlength="1" />
+                              <button type="button" class="promocod__btn">Применить</button>
+                           </div>
+                           <div class="promocod__result success">Промокод не действителен</div>
+                        </div>
+                        <div class="order-b__plus flex cv sb">
+                           <div>Ваша выгода</div>
+                           <div>8 000 ₽</div>
+                        </div>
+                        <div class="order-b__total flex cv sb">
+                           <div>Итого</div>
+                           <div>38 508 ₽</div>
+                        </div>
+                        <button id="basket_send" type="button" class="order-b__send btn btn-primary">Оформить заказ</button>
+                        <div class="order-b__polit">Нажимая кнопку "Оформить заказ", вы соглашаетесь с <a href="#" class="link-underline"> правилами обработки персональных данных</a>, указанных в данной форме</div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            @@include('components/panelMenu/panelMenu.html', {page:'catalog'})
+         </div>
+         @@include('components/footer/footer.html', {})
+         <script src="./js/libs/nouislider.min.js"></script>
+         <script src="./js/libs/wNumb.min.js"></script>
+      </main>
+   </body>
+</html>

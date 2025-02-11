@@ -1,0 +1,255 @@
+.map-ms {
+  margin-top: 40px;
+  gap: 110px;
+
+  @include lg {
+    gap: 46px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  // .map-ms__content
+  &__content {
+    .title {
+      margin-top: 4px;
+      margin-bottom: 20px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .map-ms__phone
+  &__phone {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--interface-red);
+
+    @include sm {
+      font-size: 32px;
+    }
+  }
+
+  // .map-ms__map
+  &__map {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 58%;
+    flex-shrink: 0;
+    min-height: 316px;
+
+    @include lg {
+      width: 52%;
+    }
+
+    @include md {
+      width: 42%;
+    }
+
+    @include sm {
+      width: 100%;
+      min-height: 570px;
+    }
+  }
+
+  // .map-ms__bottom
+  &__bottom {
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 140%;
+
+    span {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    ul {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @include sm {
+          margin-bottom: 12px;
+        }
+      }
+
+      li {
+        @include sm {
+          font-size: 14px;
+        }
+
+        &::after {
+          top: 50%;
+          transform: translateY(-50%);
+
+        }
+      }
+    }
+
+    p {}
+  }
+}
+
+.ymaps-2-1-79-controls__control {
+  display: none !important;
+}
+
+//========================================================================================================================================================
+
+.ms-serve {
+  @include sm {
+    margin-top: 40px;
+  }
+
+  .h3 {}
+
+  // .ms-serve__list
+  &__list {
+    gap: 20px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+
+    @include sm {
+      gap: 20px 8px;
+    }
+  }
+
+  // .ms-serve__item
+  &__item {
+    display: flex;
+
+    &:not(.ms-serve__item_info) {
+      width: 196px;
+      flex-shrink: 0;
+      flex-direction: column;
+      box-shadow: 4px 4px 16px 0 rgba(40, 40, 40, 0.04);
+      border: 1px solid #ededed;
+      border-radius: 8px;
+      padding: 16px;
+
+      @include lg {
+        flex: 1;
+      }
+
+      @include sm {
+        flex: 0 0 calc(50% - 4px);
+      }
+
+      div {
+        width: 40px;
+        height: 40px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      p {
+        margin-top: 16px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 14px;
+      }
+
+      a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+    }
+
+    // .ms-serve__item_info
+    &_info {
+      flex: 1;
+      margin-left: 60px;
+      align-items: center;
+
+      @include lg {
+        flex: 0 0 100%;
+        margin-left: 0;
+      }
+
+      .flex {
+        gap: 8px;
+
+        @include sm {
+          align-items: center;
+        }
+      }
+
+      .flexi-cc {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+
+        @include sm {
+          margin-top: 0;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+  // .ms-serve__include
+  &__include {
+    @include sm {
+      margin-top: 40px;
+    }
+
+    ul {
+      columns: 3;
+      gap: 8px 20px;
+
+      @include lg {
+        columns: 2;
+      }
+
+      @include md {
+        columns: 1;
+      }
+
+      li {
+        font-size: 16px;
+        line-height: 140%;
+
+        &::after {
+          content: '';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+//========================================================================================================================================================
+
+.ms-text {
+  @include sm {
+    padding: 20px 0px;
+    margin: 20px 0 -48px;
+  }
+
+  // .ms-text__wrap
+  &__wrap {
+    max-width: 1070px;
+  }
+}

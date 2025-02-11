@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Акции" })
+    <body>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Акции</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Акции</h1>
+                    </div>
+                </div>
+                <div class="stock-h">
+                    <div class="container">
+                        <div class="stock-h__list mt_40 flex fw">
+                            <a class="stock-h__cart">
+                                <span class="stock-h__img">
+                                    <img src="@img/stock/prev/prev_01.png" alt="картинка баннера" />
+                                </span>
+                                <span class="stock-h__body">
+                                    <span class="stock-h__name">Бесплатный шиномонтаж</span>
+                                    <span class="stock-h__end">До конца акции: <span>03 дн. 23 ч. 57 мин.</span></span>
+                                </span>
+                            </a>
+                            <a class="stock-h__cart">
+                                <span class="stock-h__img">
+                                    <img src="@img/stock/prev/prev_02.png" alt="картинка баннера" />
+                                </span>
+                                <span class="stock-h__body">
+                                    <span class="stock-h__name">Скидка 20% на шиномонтаж</span>
+                                    <span class="stock-h__end">До конца акции: <span>03 дн. 23 ч. 57 мин.</span></span>
+                                </span>
+                            </a>
+                            <a class="stock-h__cart">
+                                <span class="stock-h__img">
+                                    <img src="@img/stock/prev/prev_03.png" alt="картинка баннера" />
+                                </span>
+                                <span class="stock-h__body">
+                                    <span class="stock-h__name">Бесплатная доставка по СПб</span>
+                                    <span class="stock-h__end">До конца акции: <span>03 дн. 23 ч. 57 мин.</span></span>
+                                </span>
+                            </a>
+                            <a class="stock-h__cart">
+                                <span class="stock-h__img">
+                                    <img src="@img/stock/prev/prev_04.png" alt="картинка баннера" />
+                                </span>
+                                <span class="stock-h__body">
+                                    <span class="stock-h__name">Сезонное хранение 999 рублей</span>
+                                    <span class="stock-h__end">До конца акции: <span>03 дн. 23 ч. 57 мин.</span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

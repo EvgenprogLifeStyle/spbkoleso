@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Мобильный шиномонтаж" })
+    <body>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+        <main class="main">
+            @@include('components/header/header.html', {})
+            <div class="wrapper">
+                <div class="head-page bg-gray">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <ul class="flex cv">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Мобильный шиномонтаж</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="title">Мобильный выездной шиномонтаж в Санкт-Петербурге</h1>
+                    </div>
+                </div>
+                <div class="delivery">
+                    <div class="container">
+                        <div class="delivery__wrap flex sb">
+                            <div class="delivery__content flex dc">
+                                <div class="delivery__list">
+                                    <div class="delivery__item delivery__item_green flex cv">
+                                        <div class="delivery__icon flexi-cc"><span></span></div>
+                                        <div class="delivery__text">
+                                            <h4>Зеленая зона</h4>
+                                            <p>Бесплатная доставка до подъезда</p>
+                                        </div>
+                                    </div>
+                                    <div class="delivery__item delivery__item_yellow flex cv">
+                                        <div class="delivery__icon flexi-cc"><span></span></div>
+                                        <div class="delivery__text">
+                                            <h4>Желтая зона</h4>
+                                            <p>Стоимость доставки 200 руб.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="delivery__info">Стоимость доставки за пределами ЖЕЛТОЙ зоны +35 руб/км.</p>
+                                <p class="delivery__war flex">
+                                    <span class="flexi-cc"><img src="@img/icons/error_outline.svg" alt="иконка авто" /></span>
+                                    * Бесплатная доставка осуществляется только при покупке комплекта шин или дисков.
+                                </p>
+                            </div>
+                            <div class="delivery__map" id="map"></div>
+                            <script>
+                                ymaps.ready(init);
+
+                                function init() {
+                                    var myMap = new ymaps.Map("map", {
+                                            center: [30.264981955459618, 59.9567962610097],
+                                            zoom: 9,
+                                            controls: ["geolocationControl", "searchControl"]
+                                        }),
+                                        deliveryPoint = new ymaps.GeoObject(
+                                            {
+                                                geometry: { type: "Point" },
+                                                properties: { iconCaption: "Адрес" }
+                                            },
+                                            {
+                                                preset: "islands#blackDotIconWithCaption",
+                                                draggable: true,
+                                                iconCaptionMaxWidth: "215"
+                                            }
+                                        ),
+                                        searchControl = myMap.controls.get("searchControl");
+                                    searchControl.options.set({ noPlacemark: true, placeholderContent: "Введите адрес доставки" });
+                                    myMap.geoObjects.add(deliveryPoint);
+
+                                    function onZonesLoad(json) {
+                                        // Добавляем зоны на карту.
+                                        var deliveryZones = ymaps.geoQuery(json).addToMap(myMap);
+                                        // Задаём цвет и контент балунов полигонов.
+                                        deliveryZones.each(function (obj) {
+                                            obj.options.set({
+                                                fillColor: obj.properties.get("fill"),
+                                                fillOpacity: obj.properties.get("fill-opacity"),
+                                                strokeColor: obj.properties.get("stroke"),
+                                                strokeWidth: obj.properties.get("stroke-width"),
+                                                strokeOpacity: obj.properties.get("stroke-opacity")
+                                            });
+                                            obj.properties.set("balloonContent", obj.properties.get("description"));
+                                        });
+
+                                        // Проверим попадание результата поиска в одну из зон доставки.
+                                        searchControl.events.add("resultshow", function (e) {
+                                            highlightResult(searchControl.getResultsArray()[e.get("index")]);
+                                        });
+
+                                        // Проверим попадание метки геолокации в одну из зон доставки.
+                                        myMap.controls.get("geolocationControl").events.add("locationchange", function (e) {
+                                            highlightResult(e.get("geoObjects").get(0));
+                                        });
+
+                                        // При перемещении метки сбрасываем подпись, содержимое балуна и перекрашиваем метку.
+                                        deliveryPoint.events.add("dragstart", function () {
+                                            deliveryPoint.properties.set({ iconCaption: "", balloonContent: "" });
+                                            deliveryPoint.options.set("iconColor", "black");
+                                        });
+
+                                        // По окончании перемещения метки вызываем функцию выделения зоны доставки.
+                                        deliveryPoint.events.add("dragend", function () {
+                                            highlightResult(deliveryPoint);
+                                        });
+
+                                        function highlightResult(obj) {
+                                            // Сохраняем координаты переданного объекта.
+                                            var coords = obj.geometry.getCoordinates(),
+                                                // Находим полигон, в который входят переданные координаты.
+                                                polygon = deliveryZones.searchContaining(coords).get(0);
+
+                                            if (polygon) {
+                                                // Уменьшаем прозрачность всех полигонов, кроме того, в который входят переданные координаты.
+                                                deliveryZones.setOptions("fillOpacity", 0.4);
+                                                polygon.options.set("fillOpacity", 0.8);
+                                                // Перемещаем метку с подписью в переданные координаты и перекрашиваем её в цвет полигона.
+                                                deliveryPoint.geometry.setCoordinates(coords);
+                                                deliveryPoint.options.set("iconColor", polygon.properties.get("fill"));
+                                                // Задаем подпись для метки.
+                                                if (typeof obj.getThoroughfare === "function") {
+                                                    setData(obj);
+                                                } else {
+                                                    // Если вы не хотите, чтобы при каждом перемещении метки отправлялся запрос к геокодеру,
+                                                    // закомментируйте код ниже.
+                                                    ymaps.geocode(coords, { results: 1 }).then(function (res) {
+                                                        var obj = res.geoObjects.get(0);
+                                                        setData(obj);
+                                                    });
+                                                }
+                                            } else {
+                                                // Если переданные координаты не попадают в полигон, то задаём стандартную прозрачность полигонов.
+                                                deliveryZones.setOptions("fillOpacity", 0.4);
+                                                // Перемещаем метку по переданным координатам.
+                                                deliveryPoint.geometry.setCoordinates(coords);
+                                                // Задаём контент балуна и метки.
+                                                deliveryPoint.properties.set({
+                                                    iconCaption: "Доставка транспортной компанией",
+                                                    balloonContent: "Cвяжитесь с оператором",
+                                                    balloonContentHeader: ""
+                                                });
+                                                // Перекрашиваем метку в чёрный цвет.
+                                                deliveryPoint.options.set("iconColor", "black");
+                                            }
+
+                                            function setData(obj) {
+                                                var address = [obj.getThoroughfare(), obj.getPremiseNumber(), obj.getPremise()].join(" ");
+                                                if (address.trim() === "") {
+                                                    address = obj.getAddressLine();
+                                                }
+                                                var price = polygon.properties.get("description");
+                                                price = price.match(/<strong>(.+)<\/strong>/)[1];
+                                                deliveryPoint.properties.set({
+                                                    iconCaption: address,
+                                                    balloonContent: address,
+                                                    balloonContentHeader: price
+                                                });
+                                            }
+                                        }
+                                    }
+
+                                    $.ajax({
+                                        url: "files/data.geojson",
+                                        dataType: "json",
+                                        success: onZonesLoad
+                                    });
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('components/footer/footer.html', {})
+        </main>
+    </body>
+</html>

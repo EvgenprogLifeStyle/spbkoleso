@@ -1,0 +1,70 @@
+@use "sass:math";
+
+// <НАСТРОЙКИ> ===============================================================================================================================================================================================================================================================================================
+$fontFamily: "Commissioner";
+$fontSize: 14;
+$mainColor: #282828;
+$maxWidthContainer: 1316px;
+
+//color
+$color-red-hover: #f00;
+$color-red: #e43a2d;
+$color-gray: #b5b5b5;
+$color-secondary: #707070;
+@import "base/base";
+// </НАСТРОЙКИ> ===============================================================================================================================================================================================================================================================================================
+
+body {
+  color: var(--main-color);
+  font-size: $fontSize + px;
+  font-family: var(--font-family-main);
+
+  // Скролл заблокирован
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+    flex: 1 1 auto;
+
+    // Фикс для слайдеров
+    >* {
+      min-width: 0;
+    }
+  }
+}
+
+//<ОСНОВНАЯ СЕТКА>============================================================================================================================
+.container {
+  max-width: min($maxWidthContainer, 100%);
+  margin-inline: auto;
+  padding-inline: 20px;
+  width: 100%;
+}
+
+//</ОСНОВНАЯ СЕТКА>============================================================================================================================
+
+// Компоненты
+@import "../components/header/header", "../components/footer/footer", "../components/panelMenu/panelMenu", "../components/productSlider/productSlider", "../components/filter/filter", "../components/popularBrand/popularBrand", "../components/popup/popup",
+"../components/feedBlock/feedBlock",
+"../components/pagin/pagin";
+
+// Подключение стилей отдельных страниц
+@import "./pages/main", "./pages/catalog", "./pages/product-detail", "./pages/basket", "./pages/brands", "./pages/404", "./pages/favorites", "./pages/contacts", "./pages/lk", "./pages/tire-wheel-car", "./pages/section_tw", "./pages/seasonal-storage", "./pages/tire-fitting", "./pages/mobile-service", "./pages/delivery", "./pages/about", "./pages/pay", "./pages/guarantee", "./pages/paint", "./pages/repair", "./pages/stock", "./pages/articles", "./pages/reg", "./pages/installment", "./pages/reviews";

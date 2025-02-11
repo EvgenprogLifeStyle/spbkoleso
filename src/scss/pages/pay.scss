@@ -1,0 +1,277 @@
+.par-pay {
+  align-items: start;
+
+  @include md {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .h3 {
+    @include sm {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .par-pay__content
+  &__content {
+    max-width: 628px;
+
+    @include sm {
+      max-width: 100%;
+    }
+  }
+
+  // .par-pay__list
+  &__list {}
+
+  // .par-pay__item
+  &__item {
+    box-shadow: 4px 4px 8px 0 rgba(40, 40, 40, 0.04);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 68px;
+    padding: 20px;
+
+    @include sm {
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @include sm {
+        margin-bottom: 12px;
+      }
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 8px;
+
+      @include sm {
+        font-size: 14px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 140%;
+
+      @include sm {
+        font-size: 12px;
+      }
+    }
+
+    .btn {
+      max-width: 204px;
+
+      @include sm {
+        max-width: 100%;
+      }
+    }
+  }
+
+  // .par-pay__text
+  &__text {
+    flex: 1 1 auto;
+
+    @include sm {
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // .par-pay__war
+  &__war {
+    max-width: 330px;
+    gap: 8px;
+
+    @include sm {
+      max-width: 100%;
+    }
+
+    span {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.prod-pay {
+  margin-top: 68px;
+
+  @include sm {
+    margin-top: 40px;
+  }
+
+  .h3 {
+    @include sm {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+  }
+
+  // .prod-pay__wrap
+  &__wrap {
+    gap: 20px;
+
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+
+  // .prod-pay__desc
+  &__desc {
+    ul {
+      li {
+        font-size: 16px;
+        line-height: 140%;
+
+        @include sm {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // .prod-pay__list
+  &__list {
+    gap: 20px;
+
+    @include sm {
+      flex-wrap: wrap;
+      gap: 8px;
+
+    }
+  }
+
+  // .prod-pay__item
+  &__item {
+    width: 196px;
+    flex-shrink: 0;
+    position: relative;
+    min-height: 174px;
+    padding: 16px;
+    box-shadow: 4px 4px 16px 0 rgba(40, 40, 40, 0.04);
+    border: 1px solid #ededed;
+    border-radius: 8px;
+
+    @include xsm {
+      aspect-ratio: 1;
+      width: calc(50% - 4px);
+      min-height: 156px;
+      padding: 12px;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          left: 24px;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      transition: 0.3s;
+      background: url('../img/icons/arr-red.svg') center/contain no-repeat;
+
+      @include xsm {
+        width: 20px;
+        height: 20px;
+        left: 12px;
+        bottom: 12px;
+      }
+    }
+
+    // .prod-pay__item_t
+    &_t {
+      .prod-pay__img {
+        bottom: 0;
+        right: 0;
+        width: 120px;
+
+        @include xsm {
+          width: 90px;
+        }
+      }
+    }
+
+    // .prod-pay__item_d
+    &_d {
+      .prod-pay__img {
+        right: 0;
+        bottom: 10px;
+        width: 91px;
+
+        @include xsm {
+          width: 68px;
+        }
+      }
+    }
+
+    // .prod-pay__item_s
+    &_s {
+      .prod-pay__img {
+        right: 6px;
+        bottom: 6px;
+        width: 104px;
+
+        @include xsm {
+          width: 78px;
+        }
+      }
+    }
+  }
+
+  // .prod-pay__icon
+  &__icon {
+    height: 24px;
+    display: block;
+    margin-bottom: 8px;
+
+    @include xsm {
+      height: 18px;
+    }
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  // .prod-pay__text
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #282828;
+    position: relative;
+    z-index: 1;
+  }
+
+  // .prod-pay__img
+  &__img {
+    position: absolute;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

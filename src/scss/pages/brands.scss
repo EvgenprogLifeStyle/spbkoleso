@@ -1,0 +1,156 @@
+.brands {
+  padding-top: 32px;
+
+  .tab-head__btn {
+    min-width: 150px;
+    justify-content: center;
+    font-size: 16px;
+    border-bottom: 1px solid #e4e4e4;
+
+    @include sm {
+      min-width: calc(50% - 1px);
+    }
+
+    &.active::before {
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    &::after {
+      display: none;
+
+    }
+  }
+
+  .tab-head {
+    padding-left: 0;
+  }
+
+  .tab-dp__list {
+    box-shadow: none;
+    border: none;
+  }
+
+  .tab-dp__item {
+    gap: 32px 20px;
+    padding: 0;
+
+    @include sm {
+      gap: 24px 12px;
+    }
+
+    &.active {
+      padding-top: 32px;
+
+      @include sm {
+        padding-top: 24px;
+      }
+    }
+  }
+
+
+  // .brands__cart
+  &__cart {
+    width: calc(100% / 6 - 100px / 6);
+    display: flex;
+    flex-direction: column;
+
+    @include lg {
+      width: calc(20% - 80px / 5);
+    }
+
+    @include md {
+      width: calc(25% - 15px);
+    }
+
+    @include sm {
+      width: calc(50% - 6px);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        .brands__overlay {
+          border-color: var(--interface-red)
+        }
+      }
+    }
+  }
+
+  // .brands__overlay
+  &__overlay {
+    box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.1);
+    padding: 20px;
+    border: 1px solid var(--outline-grey);
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+  }
+
+  // .brands__logo
+  &__logo {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  // .brands__subname
+  &__subname {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000;
+  }
+
+  // .brands__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+
+  // .brands__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  // .brands__icon
+  &__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  // .brands__name
+  &__name {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+}
